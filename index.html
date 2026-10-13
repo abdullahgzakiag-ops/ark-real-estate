@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>ARK Real Estate — Pakistan Marketplace & Management Portal</title>
+  
+  <!-- Modern Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- ARK Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Device Shell Toggle Bar -->
+  <div class="device-toggle-bar">
+    <span>View Mode:</span>
+    <button id="btn-desktop-view" class="device-btn active" onclick="toggleDeviceShell(false)">
+      <span class="material-symbols-outlined text-[16px]">desktop_windows</span> Desktop Wide
+    </button>
+    <button id="btn-mobile-view" class="device-btn" onclick="toggleDeviceShell(true)">
+      <span class="material-symbols-outlined text-[16px]">smartphone</span> Android Phone Shell
+    </button>
+  </div>
+
+  <!-- Announcement & Regulatory Ribbon -->
+  <div class="announcement-bar">
+    <span class="material-symbols-outlined text-[16px] text-amber-300">verified_user</span>
+    <span>CDA & LDA Compliant Property Registry • Pakistan Sovereign Market (PKR) • Audited Manual Tenancy Ledgers</span>
+  </div>
+
+  <!-- Sticky Top Header & Navigation -->
+  <header class="app-header">
+    <div class="header-inner">
+      <!-- Brand & Title -->
+      <div class="brand-section" onclick="switchTab('marketplace')">
+        <div class="brand-logo-badge">ARK</div>
+        <div class="brand-text">
+          <h1>ARK Real Estate <span class="pkr-flag">PKR</span></h1>
+          <div class="tagline" data-i18n="tagline">Pakistan's Trusted Marketplace & Management</div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button id="tab-btn-marketplace" class="nav-tab-btn active" onclick="switchTab('marketplace')">
+          <span class="material-symbols-outlined text-[18px]">real_estate_agent</span>
+          <span>Marketplace</span>
+        </button>
+        <button id="tab-btn-submit" class="nav-tab-btn" onclick="switchTab('submit')">
+          <span class="material-symbols-outlined text-[18px]">add_home</span>
+          <span data-i18n="submitListing">Submit Property</span>
+        </button>
+        <button id="tab-btn-moderation" class="nav-tab-btn" onclick="switchTab('moderation')">
+          <span class="material-symbols-outlined text-[18px]">gavel</span>
+          <span data-i18n="moderation">Admin Moderation</span>
+          <span id="moderationCount" class="badge-counter" style="background:#b45309;">1</span>
+        </button>
+        <button id="tab-btn-management" class="nav-tab-btn" onclick="switchTab('management')">
+          <span class="material-symbols-outlined text-[18px]">apartment</span>
+          <span data-i18n="portfolio">Portfolio & Units</span>
+        </button>
+        <button id="tab-btn-financials" class="nav-tab-btn" onclick="switchTab('financials')">
+          <span class="material-symbols-outlined text-[18px]">analytics</span>
+          <span data-i18n="financialReport">Financials</span>
+        </button>
+      </nav>
+
+      <!-- Action Chips & Language Switcher -->
+      <div class="header-actions">
+        <div id="healthChip" class="health-status-chip" title="Live Express REST API Health">
+          <span class="pulse-dot"></span>
+          <span>Connecting...</span>
+        </div>
+        <button id="langToggleBtn" class="lang-toggle-btn" onclick="toggleLanguage()">
+          <span class="material-symbols-outlined text-[16px] no-rtl-flip">translate</span>
+          <span>اردو (RTL)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- ========================================== -->
+    <!-- VIEW PANEL 1: MARKETPLACE FEED -->
+    <!-- ========================================== -->
+    <section id="panel-marketplace" class="view-panel active">
+      <!-- Micro-City Quick Switch Bar -->
+      <div class="city-filter-bar">
+        <div class="city-chips-group">
+          <button id="city-chip-all" class="city-chip active" onclick="setCityFilter('ALL')">All Pakistan</button>
+          <button id="city-chip-lahore" class="city-chip" onclick="setCityFilter('Lahore')">Lahore</button>
+          <button id="city-chip-karachi" class="city-chip" onclick="setCityFilter('Karachi')">Karachi</button>
+          <button id="city-chip-islamabad" class="city-chip" onclick="setCityFilter('Islamabad')">Islamabad</button>
+          <button id="city-chip-rawalpindi" class="city-chip" onclick="setCityFilter('Rawalpindi')">Rawalpindi</button>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
+          Saved Properties: <strong id="savedCountBadge" style="color: var(--primary);">2</strong>
+        </div>
+      </div>
+
+      <!-- Search Hub Card -->
+      <div class="search-hub-card">
+        <div class="search-hub-top">
+          <div class="purpose-toggle-group">
+            <button id="purpose-btn-all" class="purpose-btn active" onclick="setPurposeFilter('ALL')">
+              <span class="material-symbols-outlined text-[18px]">grid_view</span> All
+            </button>
+            <button id="purpose-btn-for_sale" class="purpose-btn" onclick="setPurposeFilter('FOR_SALE')">
+              <span class="material-symbols-outlined text-[18px]">home</span> Buy (برائے فروخت)
+            </button>
+            <button id="purpose-btn-for_rent" class="purpose-btn" onclick="setPurposeFilter('FOR_RENT')">
+              <span class="material-symbols-outlined text-[18px]">key</span> Rent (برائے کرایہ)
+            </button>
+          </div>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">
+            Excluding pending listings • Rule 17 Verified Only
+          </span>
+        </div>
+
+        <div class="search-inputs-row">
+          <div class="search-field-wrap">
+            <span class="material-symbols-outlined text-[20px]" style="color: var(--text-muted);">search</span>
+            <input id="searchInput" type="text" placeholder="Search DHA, Bahria Town, Gulberg, Clifton, Sector F-7..." />
+          </div>
+          <div class="search-field-wrap">
+            <span class="material-symbols-outlined text-[20px]" style="color: var(--text-muted);">payments</span>
+            <select id="priceFilter" onchange="renderMarketplace()">
+              <option value="ALL">Any Budget (PKR)</option>
+              <option value="UNDER_5CR">Under 5 Crore</option>
+              <option value="5CR_TO_15CR">5 to 15 Crore</option>
+              <option value="ABOVE_15CR">Above 15 Crore</option>
+            </select>
+          </div>
+          <div class="search-field-wrap">
+            <span class="material-symbols-outlined text-[20px]" style="color: var(--text-muted);">apartment</span>
+            <select id="typeFilter" onchange="renderMarketplace()">
+              <option value="ALL">All Property Types</option>
+              <option value="HOUSE">House / Villa</option>
+              <option value="PORTION">Upper / Lower Portion</option>
+              <option value="PENTHOUSE">Serviced Penthouse</option>
+            </select>
+          </div>
+          <button class="btn-primary" onclick="renderMarketplace()">
+            <span class="material-symbols-outlined text-[18px]">tune</span>
+            <span>Filter</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Verified Marketplace Header -->
+      <div class="section-header">
+        <h2>Verified Pakistani Luxury Properties</h2>
+        <span style="font-size: 0.85rem; color: var(--secondary); font-weight: 700; display: flex; align-items: center; gap: 4px;">
+          <span class="material-symbols-outlined text-[18px]">verified</span> 100% Admin Audited
+        </span>
+      </div>
+
+      <!-- Dynamic Property Cards Grid -->
+      <div id="marketplaceGrid" class="listings-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW PANEL 2: SUBMIT PROPERTY LISTING -->
+    <!-- ========================================== -->
+    <section id="panel-submit" class="view-panel">
+      <!-- Custodian Vetting Notice Banner (Rule 17/19) -->
+      <div class="disclaimer-banner" style="background:#fef7e6; border-color:#fbd38d; color:#744210;">
+        <span class="material-symbols-outlined" style="color:#c28d2e;">shield</span>
+        <div>
+          <strong style="font-size: 0.95rem; display: block; margin-bottom: 2px;">ARK Custodian Vetting Notice (Rule 17 & 19)</strong>
+          All property listings are initially held in <strong>PENDING_APPROVAL</strong> status. Listings will not be visible on the public marketplace until legal title deeds and owner credentials are verified by an ARK Administrator.
+        </div>
+      </div>
+
+      <div style="background: white; border-radius: 16px; padding: 28px; border: 1px solid var(--surface-border); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto;">
+        <h2 style="font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 6px;">Submit Property for Verification</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 24px;">Provide accurate property specifications matching your official CDA / LDA society allotment letter.</p>
+
+        <form id="submitListingForm" onsubmit="handleNewListingSubmit(event)">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label>Property Title *</label>
+              <input name="title" class="form-control" type="text" placeholder="e.g. 1 Kanal Modern Designer Villa" required />
+            </div>
+
+            <div class="form-group">
+              <label>Purpose *</label>
+              <select name="purpose" class="form-control" required>
+                <option value="FOR_SALE">For Sale (برائے فروخت)</option>
+                <option value="FOR_RENT">For Rent (برائے کرایہ)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>City *</label>
+              <select name="city" class="form-control" required>
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label>Sector / Society / Location *</label>
+              <input name="location" class="form-control" type="text" placeholder="e.g. DHA Phase 5, Sector G, Street 14" required />
+            </div>
+
+            <div class="form-group">
+              <label>Demand Price in PKR (Pakistani Rupee) *</label>
+              <input name="pricePkr" class="form-control" type="number" placeholder="e.g. 85000000" min="1000" required />
+              <small style="color: var(--text-muted); font-size: 0.75rem;">Exact Decimal format (Rule 14)</small>
+            </div>
+
+            <div class="form-group">
+              <label>Area Size & Unit *</label>
+              <div style="display: flex; gap: 8px;">
+                <input name="areaSize" class="form-control" type="number" step="0.1" placeholder="1" required style="flex: 1;" />
+                <select name="areaUnit" class="form-control" style="width: 120px;">
+                  <option value="KANAL">Kanal</option>
+                  <option value="MARLA">Marla</option>
+                  <option value="SQ_YD">Sq Yd</option>
+                  <option value="SQ_FT">Sq Ft</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Bedrooms</label>
+              <input name="bedrooms" class="form-control" type="number" value="5" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label>Bathrooms</label>
+              <input name="bathrooms" class="form-control" type="number" value="6" min="0" />
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label>Architectural Highlights & Description</label>
+              <textarea name="description" class="form-control" rows="3" placeholder="Describe the layout, interior finish, imported fittings, and registry details..."></textarea>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px;">
+            <button type="button" class="btn-secondary" onclick="switchTab('marketplace')">Cancel</button>
+            <button type="submit" class="btn-primary">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+              <span>Submit for Admin Vetting</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW PANEL 3: ADMIN MODERATION -->
+    <!-- ========================================== -->
+    <section id="panel-moderation" class="view-panel">
+      <div class="section-header">
+        <div>
+          <h2>Administrator Listing Moderation Queue</h2>
+          <p style="color: var(--text-muted); font-size: 0.88rem;">Review submitted properties and grant verified status per Rule 17 & 19.</p>
+        </div>
+        <span class="status-chip pending">Admin Access Verified</span>
+      </div>
+
+      <!-- Pending Moderation Listings Container -->
+      <div id="moderationList">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW PANEL 4: PORTFOLIO & MANAGEMENT -->
+    <!-- ========================================== -->
+    <section id="panel-management" class="view-panel">
+      <!-- Portfolio Health KPI Metrics -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-icon-box" style="background: linear-gradient(135deg, #166534, #15803d);">
+            <span class="material-symbols-outlined">donut_large</span>
+          </div>
+          <div class="metric-info">
+            <h3>Occupancy Rate</h3>
+            <div class="metric-value">94.2%</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box" style="background: linear-gradient(135deg, #0b1e36, #1e3a5f);">
+            <span class="material-symbols-outlined">payments</span>
+          </div>
+          <div class="metric-info">
+            <h3>Monthly Rent Roll</h3>
+            <div class="metric-value">PKR 34.5 Lakh</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box" style="background: linear-gradient(135deg, #c28d2e, #b45309);">
+            <span class="material-symbols-outlined">groups</span>
+          </div>
+          <div class="metric-info">
+            <h3>Active Tenancies</h3>
+            <div class="metric-value">18 Units</div>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-box" style="background: linear-gradient(135deg, #dc2626, #b91c1c);">
+            <span class="material-symbols-outlined">build</span>
+          </div>
+          <div class="metric-info">
+            <h3>Pending Tickets</h3>
+            <div class="metric-value">2 Active</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prominent Rule 18 Regulatory Disclaimer -->
+      <div class="disclaimer-banner">
+        <span class="material-symbols-outlined">info</span>
+        <div>
+          <strong>Statutory Rent Recording Disclosure (Rule 18):</strong>
+          Payment records represent audited manual ledger entries only. ARK Real Estate does not transfer, collect, or process funds. All entries are subject to custodian verification against bank deposit slips or cheque clearance.
+        </div>
+      </div>
+
+      <!-- Units & Tenancy Schedule Table -->
+      <div class="data-table-card">
+        <div class="table-header-bar">
+          <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--primary);">Units, Leases & Rent Schedules</h3>
+          <button class="btn-primary" onclick="openPaymentModal('Villa 12-A', 220000)">
+            <span class="material-symbols-outlined text-[18px]">receipt_long</span>
+            <span>Record Manual Payment</span>
+          </button>
+        </div>
+        <div class="table-responsive">
+          <table class="ark-table">
+            <thead>
+              <tr>
+                <th>Property / Unit</th>
+                <th>Tenant (NADRA Verified)</th>
+                <th>Monthly Rent (PKR)</th>
+                <th>Schedule Status</th>
+                <th>Last Payment Date</th>
+                <th>Audit Action</th>
+              </tr>
+            </thead>
+            <tbody id="unitsTableBody">
+              <!-- Rendered dynamically via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW PANEL 5: FINANCIAL REPORTS & EXPENSES -->
+    <!-- ========================================== -->
+    <section id="panel-financials" class="view-panel">
+      <!-- Realized Net Income Banner -->
+      <div class="financial-kpi-banner">
+        <div class="kpi-left">
+          <h3>Realized Net Operating Income (PKR)</h3>
+          <div class="income-number">PKR 3,022,200</div>
+          <p style="font-size: 0.85rem; color: #cbd5e1; margin-top: 4px;">Audited Net Yield across Karachi, Lahore & Islamabad properties.</p>
+        </div>
+        <div class="kpi-badge-group">
+          <div class="noi-pill">
+            <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Net Operating Income</div>
+            <div class="rate">87.6%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-table-card">
+        <div class="table-header-bar">
+          <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--primary);">Operating Expense Deductions (PKR)</h3>
+          <span style="font-size: 0.82rem; color: var(--text-muted);">Current Month Reconciliation</span>
+        </div>
+        <div style="padding: 20px;" id="expensesList">
+          <!-- Rendered dynamically via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- MODALS -->
+  <!-- ========================================== -->
+
+  <!-- Modal: Record Manual Rent Payment (Rule 18) -->
+  <div id="paymentModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Record Manual Rent Payment</h3>
+        <button class="btn-close-modal" onclick="closeModal('paymentModal')">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <form onsubmit="handleRecordPaymentSubmit(event)">
+        <div class="modal-body">
+          <div class="disclaimer-banner" style="margin-bottom: 0;">
+            <span class="material-symbols-outlined">info</span>
+            <div>
+              <strong>Rule 18 Disclaimer:</strong> Payment logged manually. Subject to verification by ARK custodian before clearance. ARK does not transfer or process funds.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Selected Unit:</label>
+            <div id="modalUnitName" style="font-weight: 800; color: var(--primary); font-size: 1.1rem;">Villa 12-A</div>
+          </div>
+
+          <div class="form-group">
+            <label>Amount (PKR) *</label>
+            <input id="paymentAmountInput" class="form-control" type="number" required />
+          </div>
+
+          <div class="form-group">
+            <label>Payment Method *</label>
+            <select id="paymentMethodSelect" class="form-control" required>
+              <option value="Direct Bank Transfer (IBFT)">Direct Bank Transfer (IBFT)</option>
+              <option value="Bank Cheque / Pay Order">Bank Cheque / Pay Order</option>
+              <option value="Cash Deposit with Slip">Cash Deposit with Slip</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Transaction / Deposit Reference Number *</label>
+            <input id="paymentRefInput" class="form-control" type="text" placeholder="e.g. HBL-FT-99238411" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" onclick="closeModal('paymentModal')">Cancel</button>
+          <button type="submit" class="btn-primary">Record Manual Ledger Entry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Inquire / Book Physical Viewing -->
+  <div id="viewingModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Book Physical Inspection Viewing</h3>
+        <button class="btn-close-modal" onclick="closeModal('viewingModal')">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 id="viewingListingTitle" style="font-size: 1.1rem; color: var(--primary); font-weight: 700;">1 Kanal Luxury Villa</h4>
+        <p id="viewingListingLocation" style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">DHA Phase 5, Lahore</p>
+
+        <div class="form-group">
+          <label>Your Full Name *</label>
+          <input class="form-control" type="text" placeholder="e.g. Asad Siddiqui" required />
+        </div>
+
+        <div class="form-group">
+          <label>Pakistani Mobile Number (WhatsApp) *</label>
+          <input class="form-control" type="text" placeholder="+92 300 1234567" required />
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Inspection Date</label>
+          <input class="form-control" type="date" value="2026-10-18" />
+        </div>
+
+        <div class="form-group">
+          <label>Time Slot</label>
+          <select class="form-control">
+            <option>Morning (11:00 AM - 1:00 PM)</option>
+            <option>Afternoon (3:00 PM - 5:00 PM)</option>
+            <option>Evening (5:30 PM - 7:00 PM)</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('viewingModal')">Cancel</button>
+        <button class="btn-primary" onclick="closeModal('viewingModal'); showToast('Inspection request sent to verified listing agent.');">
+          Confirm Viewing Appointment
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Property Detailed Specifications -->
+  <div id="detailsModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Property Specifications</h3>
+        <button class="btn-close-modal" onclick="closeModal('detailsModal')">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="modal-body" id="detailsModalContent">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('detailsModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="/js/app.js"></script>
+</body>
+</html>
