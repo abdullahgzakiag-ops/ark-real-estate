@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">آرک رئیل اسٹیٹ</string>
+    <string name="tagline">پاکستان کی بااعتماد رئیل اسٹیٹ مارکیٹ اور مینجمنٹ</string>
+    <string name="verified_access">تصدیق شدہ محفوظ رسائی</string>
+    <string name="welcome_title">آرک رئیل اسٹیٹ میں خوش آمدید</string>
+    <string name="welcome_subtitle">پاکستان بھر میں جائیداد تلاش یا مینج کرنے کے لیے سائن ان کریں یا نیا اکاؤنٹ بنائیں۔</string>
+    <string name="sign_in">سائن ان</string>
+    <string name="create_account">نیا اکاؤنٹ بنائیں</string>
+    <string name="welcome_back">خوش آمدید</string>
+    <string name="sign_in_subtitle">لاہور، کراچی اور اسلام آباد میں اپنی جائیدادوں اور کرایہ کے ریکارڈ تک رسائی حاصل کریں۔</string>
+    
+    <!-- Roles -->
+    <string name="role_select_title">اکاؤنٹ کی قسم منتخب کریں</string>
+    <string name="role_seeker_title">خریدار / کرایہ دار</string>
+    <string name="role_seeker_desc">تصدیق شدہ جائیدادیں تلاش کریں، پسندیدہ محفوظ کریں اور معائنہ شیڈول کریں۔</string>
+    <string name="role_owner_title">مالک مکان / پلاٹ اونر</string>
+    <string name="role_owner_desc">اپنے ولاز، اپارٹمنٹس یا پلاٹ لسٹ کریں اور کرایہ کا شیڈول سنبھالیں۔</string>
+    <string name="role_agent_title">پراپرٹی ایجنٹ / ڈیلر</string>
+    <string name="role_agent_desc">کلائنٹس کی لسٹنگز کو سنبھالیں اور خریداروں کے مصدقہ رابطے حاصل کریں۔</string>
+    <string name="role_manager_title">پراپرٹی مینیجر</string>
+    <string name="role_manager_desc">متعدد یونٹس، کرایہ نامے اور مینٹیننس کے اخراجات کا مکمل انتظام کریں۔</string>
+    
+    <!-- Inputs -->
+    <string name="mobile_label">رجسٹرڈ پاکستانی موبائل نمبر</string>
+    <string name="mobile_placeholder">300 1234567</string>
+    <string name="password_label">پاس ورڈ</string>
+    <string name="full_name_label">پورا نام</string>
+    <string name="agency_name_label">ایجنسی کا نام (اختیاری)</string>
+    
+    <!-- Buttons & Disclosures -->
+    <string name="btn_continue">آگے بڑھیں</string>
+    <string name="btn_sign_in">آرک میں سائن ان کریں</string>
+    <string name="disclosure_manual_payment">ادائیگی دستی طور پر درج کی گئی۔ کلیئرنس سے قبل تصدیق ضروری ہے۔</string>
+    <string name="cda_lda_compliant">سی ڈی اے اور ایل ڈی اے کے مطابق مصدقہ رجسٹری</string>
+
+    <!-- Marketplace Strings -->
+    <string name="marketplace_title">پراپرٹی مارکیٹ پلیس</string>
+    <string name="search_placeholder">ڈی ایچ اے، بحریہ، گلبرگ میں تلاش کریں...</string>
+    <string name="filter_title">فلٹرز اور ترتیب</string>
+    <string name="filter_purpose">مقصد</string>
+    <string name="filter_property_type">جائیداد کی قسم</string>
+    <string name="filter_bedrooms">کمرے / بیڈ رومز</string>
+    <string name="btn_apply_filters">فلٹرز لاگو کریں</string>
+    <string name="btn_reset_all">تمام فلٹرز ختم کریں</string>
+    <string name="for_sale">برائے فروخت</string>
+    <string name="for_rent">برائے کرایہ</string>
+    <string name="verified_direct">تصدیق شدہ لسٹنگ</string>
+    <string name="btn_inquire_viewing">رابطہ / معائنہ شیڈول کریں</string>
+    <string name="direct_inquiry_title">مالک یا ایجنٹ سے رابطہ کریں</string>
+    <string name="btn_send_inquiry">براہ راست پیغام بھیجیں</string>
+
+    <!-- Property Management Strings -->
+    <string name="management_title">پراپرٹی مینجمنٹ</string>
+    <string name="portfolio_health">پورٹ فولیو کی مجموعی صورتحال</string>
+    <string name="occupancy_rate">کرایہ داری شرح</string>
+    <string name="monthly_rent_roll">ماہانہ متوقع کرایہ</string>
+    <string name="units_tenancies">یونٹس اور کرایہ داری</string>
+    <string name="record_payment_title">کرایہ ادائیگی کا اندراج</string>
+    <string name="btn_record_payment">دستی ادائیگی درج کریں</string>
+    <string name="report_maintenance_title">مینٹیننس کی شکایت درج کریں</string>
+    <string name="btn_submit_maintenance">شکایت جمع کروائیں</string>
+    
+    <!-- Diagnostics & Resilience States -->
+    <string name="state_empty_title">کوئی پراپرٹی نہیں ملی</string>
+    <string name="state_empty_desc">آپ کے فلٹرز کے مطابق کوئی فعال لسٹنگ دستیاب نہیں۔ تلاش کے معیارات تبدیل کریں۔</string>
+    <string name="state_offline_title">انٹرنیٹ کنکشن منقطع ہے</string>
+    <string name="state_offline_desc">آپ آف لائن ہیں۔ محفوظ شدہ ڈیٹا اب بھی دیکھا جا سکتا ہے۔</string>
+    <string name="btn_retry">دوبارہ کوشش کریں</string>
+    <string name="btn_reset_filters">فلٹرز ری سیٹ کریں</string>
+
+    <!-- Submission & Moderation -->
+    <string name="submit_listing_title">پراپرٹی لسٹنگ جمع کروائیں</string>
+    <string name="submit_listing_desc">تصدیق اور لسٹنگ کے لیے اپنی جائیداد کی تفصیلات درج کریں۔</string>
+    <string name="custodian_vetting_notice">آرک کسٹوڈین تصدیقی نوٹس</string>
+    <string name="custodian_vetting_desc">تمام لسٹنگز پہلے تصدیقی مرحلے میں رکھی جاتی ہیں تاکہ ملکیت کے دستاویزات کی جانچ کی جا سکے۔</string>
+    <string name="property_title_label">جائیداد کا عنوان</string>
+    <string name="city_label">شہر</string>
+    <string name="location_label">مقام / سیکٹر / سوسائٹی</string>
+    <string name="price_pkr_label">قیمت (پاکستانی روپے)</string>
+    <string name="area_size_label">رقبہ</string>
+    <string name="area_unit_label">پیمائش (مرلہ / کنال / مربع فٹ)</string>
+    <string name="btn_submit_for_vetting">تصدیق کے لیے جمع کروائیں</string>
+    <string name="my_listings_title">میری جائیداد کی لسٹنگز</string>
+    <string name="tab_all">تمام</string>
+    <string name="tab_approved">منظور شدہ</string>
+    <string name="tab_pending">زیرِ تصدیق</string>
+    <string name="tab_rejected">توجہ طلب</string>
+    <string name="saved_properties_title">پسندیدہ جائیدادیں</string>
+    <string name="no_saved_properties">ابھی تک کوئی پسندیدہ پراپرٹی محفوظ نہیں کی گئی</string>
+    <string name="admin_moderation_title">ایڈمن لسٹنگ جائزہ اور منظوری</string>
+    <string name="btn_approve_and_publish">منظور اور شائع کریں</string>
+    <string name="btn_reject_listing">مسترد / ترمیم کی درخواست کریں</string>
+
+    <!-- Tenancy & Financials -->
+    <string name="tenant_lease_title">کرایہ نامہ معاہدہ</string>
+    <string name="financial_report_title">مالیاتی رپورٹ اور اخراجات</string>
+    <string name="realized_net_income">خالص وصول شدہ آمدنی</string>
+    <string name="financial_disclaimer">کرایہ کا ریکارڈ صرف آڈٹ شدہ دستی لیجر اندراجات کی عکاسی کرتا ہے۔ آرک رقم منتقل نہیں کرتا۔</string>
+    <string name="activity_alerts_title">اطلاعات اور سرگرمیاں</string>
+    <string name="profile_settings_title">اکاؤنٹ اور ترتیبات</string>
+    <string name="language_switcher">ایپلی کیشن کی زبان</string>
+    <string name="english_ltr">English (LTR)</string>
+    <string name="urdu_rtl">اردو (RTL)</string>
+    <string name="btn_sign_out">سائن آؤٹ</string>
+</resources>

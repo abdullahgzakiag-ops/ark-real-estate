@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>ARK Real Estate</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span>09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="ARK Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VhmPVMKkveM1QqWIwc7iMrtmh1WWKmRyMr4gXcV3DtLsFTva41boOz2WHbbfFPG7DDx3YG3W37YLzGSTi-xjsBAD6o3an3AFsEEwkthOayFCBX_4M_6NDXgr-eSccbraPm3fp-_JtGz431Hha-tBGYUSSlBOEYGRARyY6BzEgMVgjs_eUJlekNyV_tsR0RZrWh98m9m2Z2U_X7_O9JVjXeD_ZamVSRyT65wX5uq516rfIqwgc8yd-IYs4"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1 cursor-pointer"><span class="font-label-md text-label-md text-primary font-bold truncate">Lahore, DHA Phase 5</span><span class="material-symbols-outlined text-[18px] text-primary flex-shrink-0">expand_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">ARK Real Estate • Estate Management</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAVqf4wdnMmKDrSHmC8757UL0v0K4ccCVnkD1wCQTMDYsR-3y-TnnoljV-CMCwO2fE1MDL6SJjBKka7Kwkqn-4ouXhRTJJRfsbIBcn0XXpunzpw_KXAfJjM67KG33g3Bc8OY6j3tnkYWnfhc-Kx7eIvRZV7SnbDzXykjASln7f_9xm2435Jn7vccloHP-1o4wD6ExuA-t5tk8duFciqaFPzXbwKiBClOs4b6kIQ1Zcmp3YZIaNMiN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Asset Accounting</span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Audited Ledger
+        </span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">Property Financials &amp; Ledger Reports</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reconciled performance across DHA Lahore, Gulberg &amp; Islamabad holdings</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="relative flex-1">
+<button class="w-full h-11 px-space-md bg-surface-container-low rounded-lg flex items-center justify-between text-left focus:outline-none" id="periodSelectorBtn" type="button">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">date_range</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Q3 2024 (Jul - Sep)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="exportPdfBtn" title="Export PDF Statement">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+<button class="w-11 h-11 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" id="exportCsvBtn" title="Download CSV Spreadsheet">
+<span class="material-symbols-outlined text-[20px]">table_view</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between px-space-sm py-space-xs rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">sync</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last synced with Meezan Bank Corporate</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Today, 08:30 PKT</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-primary-container p-space-md rounded-xl text-on-primary flex flex-col justify-between shadow-sm col-span-2 relative overflow-hidden">
+<div class="absolute -right-4 -bottom-6 w-28 h-28 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Realized Net Income</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-label-sm text-label-sm text-secondary-fixed">PKR</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-primary">1,734,500</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-primary-container">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">trending_up</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-semibold">+8.4% vs Q2</span>
+</div>
+<span class="font-label-sm text-label-sm">NOI Margin: 87.6%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gross Realized</span>
+<span class="w-7 h-7 rounded-full bg-secondary-container/40 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-label-sm text-label-sm text-secondary">PKR</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">1,980,000</div>
+</div>
+<div class="mt-space-xs flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">94% Collected</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Operating Exp.</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</span>
+</div>
+<div class="mt-space-sm">
+<span class="font-label-sm text-label-sm text-secondary">PKR</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">245,500</div>
+</div>
+<div class="mt-space-xs flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm">12.4% of Gross</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm col-span-2 flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/30 flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">insights</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Portfolio Cap Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">6.2% Annualized Yield</span>
+<span class="font-label-sm text-label-sm text-secondary">DHA Lahore &amp; Islamabad Portfolio</span>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Tier-1 Class</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Expense Category Breakdown</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total disbursed: PKR 245,500</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">4 Sectors</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-high flex overflow-hidden">
+<div class="bg-primary h-full" style="width: 34.6%;" title="Maintenance &amp; Repairs (34.6%)"></div>
+<div class="bg-secondary h-full" style="width: 25.4%;" title="Society Maintenance (25.4%)"></div>
+<div class="bg-on-tertiary-container h-full" style="width: 20.5%;" title="Tax Token Withholding (20.5%)"></div>
+<div class="bg-secondary-fixed-dim h-full" style="width: 19.5%;" title="Security &amp; Facilities (19.5%)"></div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Maintenance &amp; HVAC Repairs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Reactive and routine servicing</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 85,000</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">34.6%</div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Society Maintenance &amp; DHA Dues</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Quarterly conservancy &amp; utilities</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 62,500</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">25.4%</div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Punjab Property Tax Withholding</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Excise &amp; Taxation token chalans</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 50,000</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">20.5%</div>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Security Guard &amp; Facility Charges</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guarded gates &amp; perimeter CCTV</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 48,000</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant">19.5%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Expense Ledger</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified disbursements with proof records</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface" id="viewLedgerFilter">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">water_damage</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Water Tank Sensor Replacement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Shop #12 Y-Block Commercial, DHA Lahore</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 14,500</span>
+<span class="block font-label-sm text-label-sm text-secondary">26 Sep 2024</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+                Paid via IBFT
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ref: FT99841280</span>
+</div>
+<button class="inline-flex items-center gap-1 text-primary hover:text-secondary font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[14px]">receipt</span>
+              Receipt Attached
+            </button>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">hvac</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">HVAC Maintenance Service</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Villa 42-B, Sector J, DHA Phase 6</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">PKR 28,000</span>
+<span class="block font-label-sm text-label-sm text-secondary">19 Sep 2024</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between pt-space-xs gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">history_edu</span>
+                Cheque #449102
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cleared (HBL Corporate)</span>
+</div>
+<button class="inline-flex items-center gap-1 text-primary hover:text-secondary font-label-sm text-label-sm font-semibold px-2 py-1 rounded bg-surface-container-lowest transition-colors">
+<span class="material-symbols-outlined text-[14px]">visibility</span>
+              Voucher Scan
+            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex-shrink-0 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-bold">Statutory &amp; FBR Compliance Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          ARK records manual offline cash and banking disbursements for owner tax filing assistance and asset audit trails.
+        </p>
+</div>
+</div>
+<div class="sticky bottom-20 z-30 flex justify-center w-full px-margin pointer-events-none">
+<button class="pointer-events-auto h-12 px-space-lg rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-lg flex items-center gap-space-sm active:scale-95 transition-transform hover:bg-primary" id="logExpenseBtn">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">add_circle</span>
+<span>Log New Property Expense</span>
+</button>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-sm" id="expenseModal">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-2xl p-space-lg flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary">post_add</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Record Property Disbursement</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-sm" id="expenseForm" onsubmit="event.preventDefault(); alert('Expense logged into ARK ledger queue.'); document.getElementById('expenseModal').classList.add('hidden');">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Property Unit</label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Villa 42-B, Sector J, DHA Phase 6</option>
+<option>Shop #12, Y-Block Commercial, DHA Lahore</option>
+<option>Penthouse 401, Silver Oaks, Islamabad</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Category</label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Maintenance &amp; HVAC</option>
+<option>DHA Society Dues</option>
+<option>Security &amp; Facility</option>
+<option>Property Tax Token</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Amount (PKR)</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none" placeholder="25,000" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Payment Method</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<label class="flex items-center justify-center gap-1 h-9 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input checked="" class="accent-primary" name="pay_mode" type="radio"/> IBFT
+            </label>
+<label class="flex items-center justify-center gap-1 h-9 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input class="accent-primary" name="pay_mode" type="radio"/> Cheque
+            </label>
+<label class="flex items-center justify-center gap-1 h-9 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input class="accent-primary" name="pay_mode" type="radio"/> Cash
+            </label>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+<span class="font-body-sm text-body-sm">Attach Receipt / Voucher</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm" type="button">Upload</button>
+</div>
+<button class="w-full h-12 mt-space-xs rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+          Save Disbursement to Ledger
+        </button>
+</form>
+</div>
+</div>
+<script>
+    (function () {
+      const openBtn = document.getElementById('logExpenseBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const modal = document.getElementById('expenseModal');
+      const exportPdf = document.getElementById('exportPdfBtn');
+      const exportCsv = document.getElementById('exportCsvBtn');
+
+      if (openBtn && modal) {
+        openBtn.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+        });
+      }
+
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('hidden');
+        });
+      }
+
+      if (exportPdf) {
+        exportPdf.addEventListener('click', () => {
+          alert('Generating ARK Certified Financial Ledger Statement (PDF) for Q3 2024...');
+        });
+      }
+
+      if (exportCsv) {
+        exportCsv.addEventListener('click', () => {
+          alert('Exporting reconciled ledger data (CSV) for tax accounting software...');
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,30,54,0.06)]" data-active-classes="text-primary-container font-bold [&amp;_span.icon-indicator]:bg-secondary-container [&amp;_span.icon-indicator]:text-primary-container"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="home" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">home</span></span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="property-search" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="saved-properties" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark</span></span><span class="font-label-sm text-label-sm mt-0.5">Saved</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="client-inquiries" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></span><span class="font-label-sm text-label-sm mt-0.5">Inquiries</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="estate-management" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">domain</span></span><span class="font-label-sm text-label-sm mt-0.5">Manage</span></a></div></nav></body></html>

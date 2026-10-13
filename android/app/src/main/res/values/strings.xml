@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ARK Real Estate</string>
+    <string name="tagline">Pakistan\'s Trusted Real Estate Marketplace &amp; Management</string>
+    <string name="verified_access">VERIFIED SECURE ACCESS</string>
+    <string name="welcome_title">Welcome to ARK Real Estate</string>
+    <string name="welcome_subtitle">Sign in or register your account to explore or manage properties across Pakistan.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_subtitle">Sign in to access your properties, saved listings, and tenancy ledgers across Karachi, Lahore &amp; Islamabad.</string>
+    
+    <!-- Roles -->
+    <string name="role_select_title">Select Primary Account Role</string>
+    <string name="role_seeker_title">Property Seeker / Tenant</string>
+    <string name="role_seeker_desc">Browse, save verified listings, submit inquiries &amp; schedule physical inspections.</string>
+    <string name="role_owner_title">Owner / Landlord</string>
+    <string name="role_owner_desc">List your villas, apartments, or plots and manage rent schedules.</string>
+    <string name="role_agent_title">Estate Agent / Broker</string>
+    <string name="role_agent_desc">Manage listings for clients, receive verified direct buyer leads.</string>
+    <string name="role_manager_title">Property Manager</string>
+    <string name="role_manager_desc">Oversee multi-unit properties, leases, manual payment logs &amp; maintenance.</string>
+    
+    <!-- Inputs -->
+    <string name="mobile_label">Registered Pakistani Mobile</string>
+    <string name="mobile_placeholder">300 1234567</string>
+    <string name="password_label">Password</string>
+    <string name="full_name_label">Full Name</string>
+    <string name="agency_name_label">Agency Name (Optional)</string>
+    
+    <!-- Buttons & Disclosures -->
+    <string name="btn_continue">Continue</string>
+    <string name="btn_sign_in">Sign In to ARK</string>
+    <string name="disclosure_manual_payment">Payment logged manually. Subject to verification by ARK custodian before clearance. ARK does not transfer or process funds.</string>
+    <string name="cda_lda_compliant">CDA &amp; LDA Compliant Property Registry</string>
+    
+    <!-- Marketplace Strings -->
+    <string name="marketplace_title">Property Marketplace</string>
+    <string name="search_placeholder">Search DHA, Bahria, Gulberg...</string>
+    <string name="filter_title">Filters &amp; Sorting</string>
+    <string name="filter_purpose">Purpose</string>
+    <string name="filter_property_type">Property Type</string>
+    <string name="filter_bedrooms">Bedrooms</string>
+    <string name="btn_apply_filters">Apply Filters</string>
+    <string name="btn_reset_all">Reset All</string>
+    <string name="for_sale">FOR SALE</string>
+    <string name="for_rent">FOR RENT</string>
+    <string name="verified_direct">Verified Direct</string>
+    <string name="btn_inquire_viewing">Inquire / Book Viewing</string>
+    <string name="direct_inquiry_title">Contact Owner / Agent</string>
+    <string name="btn_send_inquiry">Send Direct Inquiry</string>
+
+    <!-- Property Management Strings -->
+    <string name="management_title">Property Management</string>
+    <string name="portfolio_health">Overall Portfolio Health</string>
+    <string name="occupancy_rate">Occupancy Rate</string>
+    <string name="monthly_rent_roll">Est. Monthly Roll</string>
+    <string name="units_tenancies">Units &amp; Tenancies</string>
+    <string name="record_payment_title">Record Rent Payment</string>
+    <string name="btn_record_payment">Record Manual Payment</string>
+    <string name="report_maintenance_title">Report Maintenance Issue</string>
+    <string name="btn_submit_maintenance">Submit Maintenance Ticket</string>
+
+    <!-- Diagnostics & Resilience States -->
+    <string name="state_empty_title">No Properties Found</string>
+    <string name="state_empty_desc">We could not find active listings matching your filters. Try adjusting your search criteria.</string>
+    <string name="state_offline_title">No Internet Connection</string>
+    <string name="state_offline_desc">You appear to be offline. Cached property portfolios remain accessible.</string>
+    <string name="btn_retry">Retry Connection</string>
+    <string name="btn_reset_filters">Reset Filters</string>
+
+    <!-- Submission & Moderation -->
+    <string name="submit_listing_title">Submit Property Listing</string>
+    <string name="submit_listing_desc">Submit your property for vetting and public listing.</string>
+    <string name="custodian_vetting_notice">ARK Custodian Vetting Notice</string>
+    <string name="custodian_vetting_desc">All submissions are held in PENDING status until ownership documentation is verified by an administrator.</string>
+    <string name="property_title_label">Property Title</string>
+    <string name="city_label">City</string>
+    <string name="location_label">Location / Sector / Society</string>
+    <string name="price_pkr_label">Price (PKR)</string>
+    <string name="area_size_label">Area Size</string>
+    <string name="area_unit_label">Area Unit (Marla / Kanal / Sq Ft)</string>
+    <string name="btn_submit_for_vetting">Submit for Admin Vetting</string>
+    <string name="my_listings_title">My Property Listings</string>
+    <string name="tab_all">All</string>
+    <string name="tab_approved">Approved</string>
+    <string name="tab_pending">Pending Vetting</string>
+    <string name="tab_rejected">Needs Attention</string>
+    <string name="saved_properties_title">Saved Properties</string>
+    <string name="no_saved_properties">No saved properties yet</string>
+    <string name="admin_moderation_title">Admin Listing Moderation</string>
+    <string name="btn_approve_and_publish">Approve &amp; Publish Listing</string>
+    <string name="btn_reject_listing">Reject / Request Revision</string>
+
+    <!-- Tenancy & Financials -->
+    <string name="tenant_lease_title">Tenant Lease Agreement</string>
+    <string name="financial_report_title">Property Financial Report</string>
+    <string name="realized_net_income">Realized Net Income</string>
+    <string name="financial_disclaimer">Rent records represent audited manual ledger entries only. ARK does not process or transfer funds.</string>
+    <string name="activity_alerts_title">Activity &amp; Alerts</string>
+    <string name="profile_settings_title">Account &amp; Settings</string>
+    <string name="language_switcher">Application Language</string>
+    <string name="english_ltr">English (LTR)</string>
+    <string name="urdu_rtl">اردو (RTL)</string>
+    <string name="btn_sign_out">Sign Out</string>
+</resources>

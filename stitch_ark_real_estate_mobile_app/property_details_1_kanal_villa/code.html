@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>ARK Real Estate</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span>09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Navigate back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="ARK Real Estate Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VhmPVMKkveM1QqWIwc7iMrtmh1WWKmRyMr4gXcV3DtLsFTva41boOz2WHbbfFPG7DDx3YG3W37YLzGSTi-xjsBAD6o3an3AFsEEwkthOayFCBX_4M_6NDXgr-eSccbraPm3fp-_JtGz431Hha-tBGYUSSlBOEYGRARyY6BzEgMVgjs_eUJlekNyV_tsR0RZrWh98m9m2Z2U_X7_O9JVjXeD_ZamVSRyT65wX5uq516rfIqwgc8yd-IYs4"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Property Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Share listing" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAVqf4wdnMmKDrSHmC8757UL0v0K4ccCVnkD1wCQTMDYsR-3y-TnnoljV-CMCwO2fE1MDL6SJjBKka7Kwkqn-4ouXhRTJJRfsbIBcn0XXpunzpw_KXAfJjM67KG33g3Bc8OY6j3tnkYWnfhc-Kx7eIvRZV7SnbDzXykjASln7f_9xm2435Jn7vccloHP-1o4wD6ExuA-t5tk8duFciqaFPzXbwKiBClOs4b6kIQ1Zcmp3YZIaNMiN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-safe bg-surface"><div class="flex flex-col w-full pb-28">
+<div class="relative w-full aspect-[16/11] bg-surface-container overflow-hidden group">
+<div class="flex w-full h-full transition-transform duration-300 ease-out" id="carouselTrack">
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern ultra-luxurious 1 Kanal contemporary mansion exterior in DHA Lahore with cantilevered volumes, warm linear architectural lighting, travertine stone and teak wood accents, lush front manicured lawn, evening golden hour ambiance, premium architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_E8CYgxN4pR23Yy7oI2Lo3x9Sa7rtbtnrIyVEFj5_2GYvbzNVPsgW911J4bbMYbbqcQYs7uJ5osz2yu4p8_8g-jtaEO-itANjF_iR3WUs3d1dqhq7WQ8nYxcqNnC0MbHJlsFWZvmYMQ0DRJHYvhw_I6MZ2MxXePfJ9loc7yqr55zxmwqmWIy8xGnIc65KOgvOlknCWDVecW2MvwacMlKwo6G0zQ1f9f-Ob73w1SOvMPFiOsS3qtrM"/>
+</div>
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Interior grand double-height foyer with Italian marble flooring, bespoke minimalist sculptural chandelier, floating oak staircase, warm architectural recessed strip lighting, elegant neutral tone furniture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUhiwywBvGvYVemwLQQyoVxXp4X7X9QQmyF5eb8RatHv5qikDyemmR15yavg8zSTxQzH7z0wtI_9PkQo_olpyVc35urFtaI_Fw6E-bwkilEIWcfHLj6OGb15m8oclneOD6wEknJVz90cQttkSoSNDdY96HGE39Ogk8M0VhAT4jrkg37dY0KIGj8TRbCrlUgjOAkF2SbRXF_cHuhY45l-KdKWt3CqIZISg7MMbJ4mBMld3NmUiehHal"/>
+</div>
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="State-of-the-art designer open concept kitchen featuring matte charcoal cabinetry, polished quartz waterfall island, high-end integrated appliances, and warm diffused backlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5cc-Rs9Wr9XOLz3g52yAcGflzAKMKzLUlOSrzPk0cRsDcHl13Fb9hZipi82ckGAh30NzFBSGdqqj2YeE2LdePg_uYnexQ10l8XVBlzbnjTB9wLVF8agMcWXr-yo_oZ46oFYr8bqfLnfBJ1AiaE0K1itgbwwY3mpShgRvHP-yz_BoSFSZbu_edfCXomm_tf4dcBGWgTLzD5Ifkc2m9MTzETX3tnP08spPKJJ6FoOdCiJ70yIQDGJEV"/>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/30 pointer-events-none"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm text-on-surface font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Ready to Move
+      </span>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center justify-center text-on-surface hover:text-error active:scale-90 transition-transform" id="favoriteBtn">
+<span class="material-symbols-outlined text-[20px]" id="favoriteIcon">favorite_border</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary/85 backdrop-blur-md text-on-primary font-label-md text-label-md shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">videocam</span>
+        Video Tour
+      </button>
+<div class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-container/85 backdrop-blur-md text-on-primary font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[15px]">photo_library</span>
+<span id="photoCounter">1 / 14 Photos</span>
+</div>
+</div>
+</div>
+<div class="px-margin pt-space-md flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-emerald-600" style="font-variation-settings: 'FILL' 1;">verified</span>
+          ARK Inspected &amp; Document Verified
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+          Exclusive
+        </span>
+</div>
+<div class="flex items-baseline justify-between gap-2 mt-1">
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Demand</span>
+<div class="font-headline-xl-mobile text-headline-xl-mobile text-primary tracking-tight">
+            PKR 85,000,000
+          </div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            8.5 Crore
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-low text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+<span>Rental Potential:</span>
+<strong class="text-on-surface font-semibold">~PKR 3.5 Lakh / month</strong>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface mt-2 leading-snug">
+        1 Kanal Brand New Architect-Designed Villa
+      </h1>
+<div class="flex items-start gap-1 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">location_on</span>
+<span>Sector J, Phase 6, DHA Lahore, Punjab</span>
+</div>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface mb-3 tracking-wide uppercase">Property Overview</h2>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">bed</span>
+</div>
+<div class="min-w-0">
+<span class="block font-headline-sm text-headline-sm text-on-surface">5 Beds</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">All En-suite Baths</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">bathtub</span>
+</div>
+<div class="min-w-0">
+<span class="block font-headline-sm text-headline-sm text-on-surface">6 Baths</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">+ Powder Room</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">square_foot</span>
+</div>
+<div class="min-w-0">
+<span class="block font-headline-sm text-headline-sm text-on-surface">4,500 Sq Ft</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">1 Kanal (20 Marla)</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">domain_add</span>
+</div>
+<div class="min-w-0">
+<span class="block font-headline-sm text-headline-sm text-on-surface">Built 2024</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">Brand New, Vacant</span>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface mb-3 tracking-wide uppercase">Amenities &amp; Features</h2>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">solar_power</span>
+          15kW Hybrid Solar System
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">soup_kitchen</span>
+          Italian Kitchen w/ Appliances
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">tile_large</span>
+          Imported Turkish Tiles
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">window</span>
+          Double-Glazed Windows
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">garage</span>
+          3 Car Parking Porch
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">yard</span>
+          Lush Green Lawn
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">room_service</span>
+          Maid's Room w/ Bath
+        </span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label-lg text-label-lg text-on-surface tracking-wide uppercase">Description</h2>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Ref: ARK-LHE-9042</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm">
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed line-clamp-3" id="descText">
+          Presenting a meticulously crafted signature residence in DHA Phase 6 Sector J, built with no expense spared. Featuring imported Turkish porcelain slabs, Grohe &amp; Kohler sanitary fittings, automated sensor lighting, and two fully equipped dirty and clean kitchens. Designed with optimal cross ventilation and thermal barrier insulation, this estate promises serene family living paired with prime capital appreciation in Lahore's most coveted sector.
+        </p>
+<button class="mt-2 text-secondary font-label-md text-label-md flex items-center gap-1 hover:underline" id="readMoreBtn">
+<span>Read more</span>
+<span class="material-symbols-outlined text-[16px]" id="readMoreIcon">expand_more</span>
+</button>
+</div>
+</div>
+<div>
+<h2 class="font-label-lg text-label-lg text-on-surface mb-3 tracking-wide uppercase">Listing Advisor</h2>
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative shrink-0">
+<img class="w-13 h-13 rounded-full object-cover" data-alt="Professional headshot of a Pakistani male real estate advisor in bespoke navy blazer and crisp white shirt smiling confidently against a warm architectural studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClT6-Cri15CvBwWwgwETwWoTikPi5VQIAZT-Zc9IOxXZ89R8crgPewfUlQkXGgdgecKod4erjuH01SsFlpGKK_CLwpt7S2aU1pG_XQbTGV441CKHrriNOPjMJT42w5fnQD0uD0AYhMcxp1D1Osv9y0ghjn158WO0sBi7hxihatzVQTBc4EZthi4lbiXUKiOg2mG2eH20_BoRtfVySq1iWEU6zA3cikNmYSUmBLUlHIQFZsCCRIeFg_"/>
+<span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-emerald-500 border-2 border-surface-container-lowest flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Muhammad Hamza</span>
+</div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant truncate">Senior Property Consultant</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">4.9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(38 verified reviews)</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-label-lg text-label-lg text-on-surface tracking-wide uppercase">Location &amp; Neighborhood</h2>
+<span class="font-label-sm text-label-sm text-secondary">Near Raya Golf Club</span>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-sm">
+<div class="w-full h-36 bg-cover bg-center" data-location="DHA Phase 6 Lahore Pakistan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABN0mWD8DGZWX1VASMBqYnCCgdymsRwiG_xy1Cd9es7LfvXD4PwhA_FxfvIEWfRyiGogoU_RXBjpKWylg5SBKdmq9G6u5hiZtKH2f6So4jI7gfjxPDYcchbFUCz61RBz718xMXJ0VJgfMaJ8Vfw8Wga9-cg3756mgdLLb8gf8u7i7yX076C8SBgKaOc8oNTuRPqD7sVaYYTZXlF6CZPc48yeTNwP_SkaXWjKuEFYc6_ov6cza0DjlA')"></div>
+<div class="absolute bottom-2 left-2 right-2 p-2 rounded-lg bg-surface-container-lowest/95 backdrop-blur-md flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-error">pin_drop</span>
+<span class="font-label-sm text-label-sm truncate">DHA Phase 6 Main Boulevard: 2 mins away</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold shrink-0">Open Map</span>
+</div>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">ARK Custodian Guarantee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          ARK verifies document ownership status prior to listing. Payments must be verified through official banking channels.
+        </p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-lg shadow-[0_-8px_24px_rgba(11,30,54,0.08)] px-margin py-3 pb-safe">
+<div class="flex items-center gap-3 max-w-md mx-auto">
+<button class="flex-1 h-13 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-98 transition-all">
+<span class="material-symbols-outlined text-[20px] text-emerald-600">chat</span>
+<span>WhatsApp</span>
+</button>
+<button class="flex-[1.4] h-13 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:scale-98 transition-all" id="bookViewingBtn">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">calendar_month</span>
+<span>Book Inspection</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (() => {
+    let currentSlide = 0;
+    const totalSlides = 3;
+    const track = document.getElementById('carouselTrack');
+    const counter = document.getElementById('photoCounter');
+
+    if (track && counter) {
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 40 && currentSlide < totalSlides - 1) {
+          currentSlide++;
+        } else if (touchEndX - touchStartX > 40 && currentSlide > 0) {
+          currentSlide--;
+        }
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        counter.textContent = `${currentSlide + 1} / 14 Photos`;
+      }, { passive: true });
+    }
+
+    const favBtn = document.getElementById('favoriteBtn');
+    const favIcon = document.getElementById('favoriteIcon');
+    let isFav = false;
+    if (favBtn && favIcon) {
+      favBtn.addEventListener('click', () => {
+        isFav = !isFav;
+        if (isFav) {
+          favIcon.textContent = 'favorite';
+          favIcon.style.fontVariationSettings = "'FILL' 1";
+          favIcon.classList.add('text-error');
+        } else {
+          favIcon.textContent = 'favorite_border';
+          favIcon.style.fontVariationSettings = "'FILL' 0";
+          favIcon.classList.remove('text-error');
+        }
+      });
+    }
+
+    const readMoreBtn = document.getElementById('readMoreBtn');
+    const descText = document.getElementById('descText');
+    const readMoreIcon = document.getElementById('readMoreIcon');
+    let isExpanded = false;
+
+    if (readMoreBtn && descText && readMoreIcon) {
+      readMoreBtn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        if (isExpanded) {
+          descText.classList.remove('line-clamp-3');
+          readMoreBtn.firstElementChild.textContent = 'Show less';
+          readMoreIcon.textContent = 'expand_less';
+        } else {
+          descText.classList.add('line-clamp-3');
+          readMoreBtn.firstElementChild.textContent = 'Read more';
+          readMoreIcon.textContent = 'expand_more';
+        }
+      });
+    }
+  })();
+</script></main></body></html>

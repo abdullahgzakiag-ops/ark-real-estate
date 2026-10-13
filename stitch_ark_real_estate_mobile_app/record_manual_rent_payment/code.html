@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>ARK Real Estate - Log Manual Payment</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;min-height:max(884px,100dvh);}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span>09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Navigate back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors flex-shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="ARK Real Estate Logo" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VhmPVMKkveM1QqWIwc7iMrtmh1WWKmRyMr4gXcV3DtLsFTva41boOz2WHbbfFPG7DDx3YG3W37YLzGSTi-xjsBAD6o3an3AFsEEwkthOayFCBX_4M_6NDXgr-eSccbraPm3fp-_JtGz431Hha-tBGYUSSlBOEYGRARyY6BzEgMVgjs_eUJlekNyV_tsR0RZrWh98m9m2Z2U_X7_O9JVjXeD_ZamVSRyT65wX5uq516rfIqwgc8yd-IYs4"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Log Manual Payment</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Share listing" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAVqf4wdnMmKDrSHmC8757UL0v0K4ccCVnkD1wCQTMDYsR-3y-TnnoljV-CMCwO2fE1MDL6SJjBKka7Kwkqn-4ouXhRTJJRfsbIBcn0XXpunzpw_KXAfJjM67KG33g3Bc8OY6j3tnkYWnfhc-Kx7eIvRZV7SnbDzXykjASln7f_9xm2435Jn7vccloHP-1o4wD6ExuA-t5tk8duFciqaFPzXbwKiBClOs4b6kIQ1Zcmp3YZIaNMiN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Placeholder -->
+<div class="fixed top-20 left-4 right-4 z-50 transform -translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">verified</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-lg text-label-lg text-on-primary">Ledger Entry Updated</p>
+<p class="font-body-sm text-body-sm text-surface-dim">WhatsApp receipt queued for Hamza Malik.</p>
+</div>
+</div>
+</div>
+<div class="px-margin pt-space-sm pb-space-xl flex flex-col gap-space-md">
+<!-- Top Action Breadcrumb Bar -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<button aria-label="Go back" class="w-10 h-10 -ml-1 rounded-full flex items-center justify-center text-on-surface bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Record Offline Payment</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Manual Ledger Entry • DHA Lahore</p>
+</div>
+</div>
+<div class="bg-surface-container-high text-on-secondary-fixed-variant px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm">Offline Ledger</span>
+</div>
+</div>
+<!-- MANDATORY Compliance Disclaimer Banner -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-secondary-container/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-md text-label-md text-primary-container uppercase tracking-wider">Regulatory Compliance Notice</span>
+<span class="material-symbols-outlined text-[14px] text-primary-container">shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            ARK records offline payments manually for owner ledger reconciliation. ARK Real Estate does not transfer funds or execute escrow banking inside the app.
+          </p>
+</div>
+</div>
+</div>
+<!-- Property & Active Tenancy Card (Card Selector) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Property &amp; Tenant Record</span>
+<span class="bg-surface-container text-on-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">Unit #42-B</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex items-center gap-space-sm cursor-pointer active:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex-shrink-0 flex items-center justify-center text-primary-container overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg" data-alt="Refined contemporary luxury home exterior in DHA Phase 6 Lahore with modern architectural finishes, lush landscaping, warm afternoon sun, and secure private gate in Pakistan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxrN3u3AgaMXHEpDZArmZo63ktlmoFeevEpAT9NkbuqxbWnDqoJQ_ip8tBaO3RQ7UkkpxkqYjY7ec18zVBWL7kOeb5nAUWWy6H1SfpkSe02racgOmv-nJaTn0sHwmQz4vVudbHMgXREnAQK7gN5v-RfSy3PDUQavf5fgSnbEN-vsk4wNLedtYiHdxcJ4163u3Y1Ffy-lGVtN_7bXFo6vaTL_YAW-mk6R0R_8lBqMXhNr03p_aDFE29"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-lg text-label-lg text-on-surface truncate">Villa 42-B, DHA Phase 6, Lahore</p>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">person</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Muhammad Hamza Malik</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-secondary-container font-semibold mt-0.5">Contract Rent: PKR 220,000 / mo</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] flex-shrink-0">unfold_more</span>
+</div>
+</div>
+<!-- Manual Payment Details Form -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Payment Breakdown</h3>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded-full">PKR Ledger</span>
+</div>
+<!-- Rent Cycle Selection -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Applicable Tenancy Cycle</label>
+<div class="relative">
+<div class="w-full h-13 px-space-md rounded-xl bg-surface-container-low flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">event_repeat</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">July 2024 Rent</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">calendar_month</span>
+</div>
+</div>
+</div>
+<!-- Amount Paid with Instant Pill Selectors -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Amount Collected (PKR)</label>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold">Standard: PKR 220,000</span>
+</div>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="font-label-lg text-label-lg font-bold">PKR</span>
+</div>
+<input class="w-full h-13 pl-14 pr-space-md bg-surface-container-low rounded-xl text-on-surface font-currency-display text-currency-display tracking-tight focus:bg-surface-container transition-all outline-none" id="paymentAmountInput" type="text" value="220,000"/>
+<div class="absolute right-3">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px]">check_circle</span>
+</div>
+</div>
+<!-- Quick denomination pill chips -->
+<div class="flex items-center gap-space-xs mt-1">
+<button class="px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-all" id="chipFullRent" onclick="selectFullRent()" type="button">
+<span class="material-symbols-outlined text-[14px]">done</span>
+            Full Rent (PKR 220,000)
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high active:scale-95 transition-all" id="chipPartialRent" onclick="selectPartialRent()" type="button">
+            Partial Payment
+          </button>
+</div>
+</div>
+<!-- Payment Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Date Funds Received</label>
+<div class="w-full h-13 px-space-md rounded-xl bg-surface-container-low flex items-center justify-between text-on-surface cursor-pointer">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_today</span>
+<span class="font-body-md text-body-md text-on-surface">05 July 2024</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-md">Cleared</span>
+</div>
+</div>
+<!-- Payment Mode Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Collection Mode</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- IBFT Selected -->
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-primary-container text-on-primary cursor-pointer active:scale-98 transition-all">
+<input checked="" class="hidden" name="paymentMode" type="radio"/>
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">account_balance</span>
+<span class="font-label-sm text-label-sm truncate">Bank Transfer (IBFT)</span>
+</label>
+<!-- Crossed Cheque -->
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer active:scale-98 transition-all">
+<input class="hidden" name="paymentMode" type="radio"/>
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="font-label-sm text-label-sm truncate">Crossed Cheque</span>
+</label>
+<!-- Pay Order -->
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer active:scale-98 transition-all">
+<input class="hidden" name="paymentMode" type="radio"/>
+<span class="material-symbols-outlined text-[18px]">request_quote</span>
+<span class="font-label-sm text-label-sm truncate">Pay Order / DD</span>
+</label>
+<!-- Cash Deposit -->
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer active:scale-98 transition-all">
+<input class="hidden" name="paymentMode" type="radio"/>
+<span class="material-symbols-outlined text-[18px]">payments</span>
+<span class="font-label-sm text-label-sm truncate">Cash Direct</span>
+</label>
+</div>
+</div>
+<!-- Bank & Transaction Reference Field -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Bank &amp; Transaction Reference</label>
+<div class="relative">
+<input class="w-full h-13 px-space-md bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md focus:bg-surface-container outline-none" type="text" value="Meezan Bank Ltd — Ref # FT2418709214"/>
+<button aria-label="Copy reference" class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-1" onclick="navigator.clipboard?.writeText('FT2418709214')" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified format against 1LINK transaction sequence.</p>
+</div>
+<!-- Proof of Payment Upload Component -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Proof of Deposit / Transfer</label>
+<span class="font-label-sm text-label-sm text-secondary">Verified Document</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex items-center justify-between gap-space-sm" id="receiptPreviewBox">
+<div class="flex items-center gap-3 min-w-0">
+<!-- Receipt Thumbnail Container -->
+<div class="w-14 h-14 rounded-lg bg-surface-container-high overflow-hidden flex-shrink-0 relative group">
+<img class="w-full h-full object-cover" data-alt="Official Meezan Bank mobile app transaction receipt slip showing paid stamp, green branding, Pakistani rupee amount, and verified IBFT electronic clearance status on white and subtle green paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP7TiTOfcfK45pUvEEnVn-Yb80EIsIqogFvV78F19zTNHNaon0mTvPH1doJb3NMGkvy5-XFjlAq4znR6xMIDPEtLwjcU9lwDfRrBbmL6HEIyPX_JYexTsWMfzvqLPdPrZzxVHu7oLalfo8MuFM-e-vAE7fquSGaiK8jDYZqceQjTm2LWuvUkChBKcl_JuuM5VQxeeP1HdZ4WRPWBqVlG5vV0_lhnQ9tp79yOm9WQplmq48OjHaZ6ix"/>
+<div class="absolute inset-0 bg-primary-container/30 flex items-center justify-center text-on-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<p class="font-label-md text-label-md text-on-surface truncate">Meezan_Transfer_Receipt.jpg</p>
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2.1 MB • Uploaded today at 09:32 AM</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-secondary-container bg-primary-container px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span> OCR Verified
+                </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button aria-label="Replace file" class="w-9 h-9 rounded-full flex items-center justify-center bg-surface-container text-on-surface-variant hover:bg-surface-container-high active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+<button aria-label="Remove file" class="w-9 h-9 rounded-full flex items-center justify-center bg-surface-container text-error hover:bg-error-container active:scale-95 transition-all" onclick="document.getElementById('receiptPreviewBox').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Owner Ledger Notes Field -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Owner Ledger Notes <span class="font-normal text-on-surface-variant">(Optional)</span></label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Confidential</span>
+</div>
+<textarea class="w-full p-space-md bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md focus:bg-surface-container outline-none resize-none" rows="2">Received on time via mobile banking</textarea>
+</div>
+</div>
+<!-- Specialized Compliance Badge for Pakistan Market -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-sm shadow-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm text-primary-container uppercase tracking-wide">Custodian Audit Trail</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Payment logged manually. Subject to verification by ARK Estate custodian before ledger clearance.
+        </p>
+</div>
+</div>
+<!-- Action Section -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary Save & Send Receipt Button -->
+<button class="w-full h-13 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:bg-primary active:scale-[0.99] transition-all" onclick="triggerSaveLedger()" type="button">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+        Save to Ledger &amp; Send WhatsApp Receipt
+      </button>
+<!-- Secondary Draft Button -->
+<button class="w-full h-12 rounded-xl bg-surface-container-lowest text-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-surface-container-low transition-all" onclick="triggerDraftToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+        Save as Unconfirmed Draft
+      </button>
+</div>
+<!-- Tenant WhatsApp Quick Dispatch Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center gap-space-sm shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface truncate">Auto-dispatches bilingual acknowledgment PDF to <strong>+92 300 8472910</strong></p>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">lock</span>
+</div>
+</div>
+</div>
+<script>
+  function selectFullRent() {
+    const input = document.getElementById('paymentAmountInput');
+    const fullBtn = document.getElementById('chipFullRent');
+    const partialBtn = document.getElementById('chipPartialRent');
+    
+    input.value = '220,000';
+    fullBtn.className = 'px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-all';
+    partialBtn.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high active:scale-95 transition-all';
+  }
+
+  function selectPartialRent() {
+    const input = document.getElementById('paymentAmountInput');
+    const fullBtn = document.getElementById('chipFullRent');
+    const partialBtn = document.getElementById('chipPartialRent');
+    
+    input.value = '110,000';
+    input.focus();
+    partialBtn.className = 'px-3 py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-all';
+    fullBtn.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container-high active:scale-95 transition-all';
+  }
+
+  function triggerSaveLedger() {
+    const toast = document.getElementById('toastNotification');
+    toast.classList.remove('opacity-0', '-translate-y-24');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-24');
+    }, 3500);
+  }
+
+  function triggerDraftToast() {
+    const toast = document.getElementById('toastNotification');
+    toast.querySelector('p.font-label-lg').textContent = 'Draft Saved Privately';
+    toast.querySelector('p.font-body-sm').textContent = 'Entry marked unconfirmed. Ledger pending review.';
+    toast.classList.remove('opacity-0', '-translate-y-24');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-24');
+    }, 3000);
+  }
+</script></main></body></html>

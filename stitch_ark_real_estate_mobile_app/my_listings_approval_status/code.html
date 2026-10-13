@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed-variant": "#5d4201", "on-surface": "#111c2d", "on-primary-fixed-variant": "#364762", "surface-dim": "#cfdaf2", "surface-container-highest": "#d8e3fb", "secondary": "#455f87", "primary-container": "#0b1e36", "tertiary": "#060300", "background": "#f9f9ff", "error": "#ba1a1a", "secondary-fixed-dim": "#adc8f5", "outline": "#74777e", "on-secondary-fixed": "#001c3b", "surface-bright": "#f9f9ff", "secondary-container": "#b5d0fd", "surface-variant": "#d8e3fb", "inverse-surface": "#263143", "primary-fixed-dim": "#b6c7e7", "on-primary-container": "#7586a3", "on-error-container": "#93000a", "tertiary-container": "#291b00", "on-tertiary-container": "#a2803d", "tertiary-fixed": "#ffdea5", "on-secondary-fixed-variant": "#2d486d", "surface-tint": "#4e5f7a", "primary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "surface-container": "#e7eeff", "on-primary-fixed": "#091c34", "inverse-on-surface": "#ecf1ff", "on-surface-variant": "#44474d", "surface-container-high": "#dee8ff", "on-tertiary": "#ffffff", "on-background": "#111c2d", "inverse-primary": "#b6c7e7", "on-error": "#ffffff", "primary": "#00040e", "on-secondary-container": "#3e5980", "on-primary": "#ffffff", "tertiary-fixed-dim": "#e9c176", "on-tertiary-fixed": "#261900", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface": "#f9f9ff", "error-container": "#ffdad6", "outline-variant": "#c4c6ce", "secondary-fixed": "#d5e3ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate max-w-[200px]">My Listings &amp; Approval Status</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Share" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-24">
+<!-- Regulatory & Trust Assurance Notice -->
+<div class="mb-space-md rounded-xl bg-surface-container-high p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">ARK Custodian Protocol</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary">Policy Safeguard</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Unverified listings never appear in public marketplace search until approved by an ARK Legal Custodian.
+        </p>
+</div>
+</div>
+</div>
+<!-- Status Summary Metrics Ribbon -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<h2 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Portfolio Overview</h2>
+<span class="font-label-sm text-label-sm text-secondary">Sync: Just now</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Total Listings Metric -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Total Listings</span>
+<div class="w-6 h-6 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[15px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Properties</span>
+</div>
+</div>
+<!-- Active / Published Metric -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Market</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Live
+          </span>
+</div>
+<div class="mt-2 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Approved</span>
+</div>
+</div>
+<!-- Pending Vetting Metric -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pending Vetting</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">schedule</span> 2
+          </span>
+</div>
+<div class="mt-2 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Auditing</span>
+</div>
+</div>
+<!-- Drafts Metric -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Drafts / Rework</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+            Pending
+          </span>
+</div>
+<div class="mt-2 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-surface">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Incomplete</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Scrollable Category Chips / Filter Tabs -->
+<div class="mb-space-md -mx-margin px-margin overflow-x-auto no-scrollbar flex items-center gap-2 py-1">
+<button class="tab-chip px-3.5 h-9 rounded-full bg-primary text-on-primary flex items-center gap-1.5 shrink-0 shadow-sm transition-all" data-tab="all" type="button">
+<span class="font-label-md text-label-md">All</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest/30 text-on-primary font-label-sm text-label-sm">6</span>
+</button>
+<button class="tab-chip px-3.5 h-9 rounded-full bg-surface-container text-on-surface flex items-center gap-1.5 shrink-0 transition-all hover:bg-surface-container-high" data-tab="active" type="button">
+<span class="font-label-md text-label-md">Active</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">3</span>
+</button>
+<button class="tab-chip px-3.5 h-9 rounded-full bg-surface-container text-on-surface flex items-center gap-1.5 shrink-0 transition-all hover:bg-surface-container-high" data-tab="review" type="button">
+<span class="font-label-md text-label-md">Under Review</span>
+<span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">2</span>
+</button>
+<button class="tab-chip px-3.5 h-9 rounded-full bg-surface-container text-on-surface flex items-center gap-1.5 shrink-0 transition-all hover:bg-surface-container-high" data-tab="drafts" type="button">
+<span class="font-label-md text-label-md">Drafts</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">1</span>
+</button>
+<button class="tab-chip px-3.5 h-9 rounded-full bg-surface-container text-on-surface-variant opacity-70 flex items-center gap-1.5 shrink-0 transition-all" data-tab="revision" type="button">
+<span class="font-label-md text-label-md">Needs Revision</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">0</span>
+</button>
+</div>
+<!-- Listings Feed Container -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: Spanish Villa (Under Review / Audit) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full h-44 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-alt="Expansive modern Spanish revival luxury villa in DHA Lahore with warm sandstone exterior, carved wooden archway, lush front lawn, pristine architectural photography with clear daytime sunlight and Pakistan luxury aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2U8wdwRjjOUG1ixvEyR7QQtt2czjwtscFWQAkPu1T6k_7Nqh4INQhnA0wOOHkp19ZoV9QUx2mB4mJFzK6whvTqJSgMoGNPYfbLY3IS0VOJAd3cK7ATEFiZRrA2mNof70qY72IelngB1c3AbZVfGDRlj7C-e3k-DWTEm3pbSJSIf8ZK-JNDASa5qEzmbDRJ7t-p7zatfPw5wPWEdRfyhLJ4f8jp6X5XzE5sv3gQRxfyOm3NHCEaSbQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20"></div>
+<!-- Live Status Pill Overlay -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]">history_edu</span> Step 3/4: Title &amp; Fard Audit
+          </span>
+</div>
+<!-- PKR Price Tag -->
+<div class="absolute bottom-3 left-3">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider block">Demand Valuation</span>
+<p class="font-currency-display text-currency-display text-on-primary font-bold">PKR 9.20 Crore</p>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">1 Kanal Luxury Spanish Villa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+            Sector J, DHA Phase 6, Lahore
+          </p>
+</div>
+<!-- Specs Inline Ribbon -->
+<div class="flex items-center gap-space-md py-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">aspect_ratio</span> 1 Kanal</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">bed</span> 5 Beds</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">bathtub</span> 6 Baths</span>
+</div>
+<!-- Verification Tracker Mini-Banner -->
+<div class="rounded-lg bg-surface-container-high p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm flex items-center gap-1 text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[15px]">schedule</span> Vetting ETA: Tomorrow 2:00 PM
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Submitted 4h ago</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-1.5 rounded-full" style="width: 75%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Listing is private. Custodians are currently verifying Patwari records &amp; DHA Transfer NOC.
+          </p>
+</div>
+<!-- Action Row -->
+<div class="pt-1 flex items-center gap-space-sm">
+<button class="flex-1 h-11 px-4 rounded-xl bg-primary-container text-on-primary flex items-center justify-center gap-1.5 font-label-lg text-label-lg shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span> Audit Progress
+          </button>
+<button aria-label="Edit Listing" class="h-11 px-3.5 rounded-xl bg-surface-container text-secondary flex items-center justify-center font-label-lg text-label-lg hover:bg-surface-container-high active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Bahria Town Executive House (Active & Certified Gold) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full h-44 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-alt="Chic multi-story executive residential mansion in Bahria Town Rawalpindi with grey granite accents, clean geometric balconies, landscaped palm trees, clear blue sky, upscale Pakistani architectural standard." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAf-lnImHUw6NxZWSr7R_cI5DD8IhfK6gchvaFPtS_zuIxIS3e37lwk93tVZlZ8WLooxIPfwFzDJ_rZUTd28paGe2cd-AJMFqLy7m0kk5ou5ZE4hTgt04AI1hDRPwKyvtV4bzMyQfhDjJw2Urw6KWvfY0cjVzotz5GRdHBW40qvhvGk58A8XE8HDwG7m2LlqC5rzKw60pi2lENhCqujNP8v4Ivat6wByoSnyeHazyhu0i-4-sAPPAFd')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20"></div>
+<!-- Active Verified Badge -->
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span> Live &amp; Certified Gold
+          </span>
+</div>
+<!-- High Demand Tag -->
+<div class="absolute top-3 right-3">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed">bolt</span> High Interest
+          </span>
+</div>
+<!-- Price -->
+<div class="absolute bottom-3 left-3">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider block">Demand Valuation</span>
+<p class="font-currency-display text-currency-display text-on-primary font-bold">PKR 4.20 Crore</p>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">10 Marla Executive House</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+            Sector C, Bahria Town, Rawalpindi
+          </p>
+</div>
+<!-- Engagement Metrics Row -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-around text-center">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">142</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Views</span>
+</div>
+<div class="w-px h-6 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Saves</span>
+</div>
+<div class="w-px h-6 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-secondary font-bold">3 Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Inquiries</span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-1 flex items-center gap-space-sm">
+<button class="flex-1 h-11 px-4 rounded-xl bg-primary text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">forum</span> View Inquiries (3)
+          </button>
+<button class="h-11 px-3.5 rounded-xl bg-surface-container text-secondary flex items-center justify-center gap-1 font-label-lg text-label-lg hover:bg-surface-container-high active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span class="hidden xs:inline">Promote</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Commercial Plot Gulberg III (Draft / Missing LDA Fard) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full h-36 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center grayscale opacity-85" data-alt="High-value prime commercial corner open plot in Gulberg III Lahore surrounded by corporate towers, paved wide boulevard, clean boundary wall marking 2 Kanal dimensions, daytime clear lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDc00jKetm5w1SOUXO8HQYixhT_B_Ah6gOL0zE3h3PTTKF8wQ8AoKXKUi5Ug5WumzjOEsCHPf9i_hVRcBQM8bEeT3iwGE1koXtPO8Es7IU1INOkexC3plkKermQe-nb6E2EW3OM1m9wtwuZFeJwk4_s06W_1UInBQ1cXIKSKtyKPluytsm-HiD-Ntz4IHYHEmOheoc3e14tsXl8NtE-MadxrMHiYKGfkNjGocA3XhHG0eTfD2ARSLTk')"></div>
+<div class="absolute inset-0 bg-primary/40"></div>
+<!-- Draft Status Chip -->
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">edit_document</span> Draft • 65% Completed
+          </span>
+</div>
+<div class="absolute bottom-3 left-3">
+<span class="font-label-sm text-label-sm text-surface-container-low uppercase tracking-wider block">Target Asking Price</span>
+<p class="font-currency-display text-currency-display text-on-primary font-bold">PKR 14.50 Crore</p>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">2 Kanal Commercial Plot</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+            Main Boulevard, Gulberg III, Lahore
+          </p>
+</div>
+<!-- Action Notice / Missing Documentation -->
+<div class="rounded-lg bg-error-container/40 p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">warning</span>
+<div class="flex-1 min-w-0">
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold block">Missing Mandatory Verification Deed</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Missing: LDA Registry Fard upload. Custodians cannot initiate Title vetting without scanned ownership pages.
+            </p>
+</div>
+</div>
+<!-- Action Row -->
+<div class="pt-1 flex items-center gap-space-sm">
+<button class="flex-1 h-11 px-4 rounded-xl bg-secondary text-on-secondary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span> Continue Editing
+          </button>
+<button aria-label="Discard Draft" class="h-11 w-11 rounded-xl bg-surface-container text-error flex items-center justify-center hover:bg-surface-container-high active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Coastal Villa Karachi (Under Review / Inspection Scheduled) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full h-44 bg-surface-container">
+<div class="w-full h-full bg-cover bg-center" data-alt="Luxurious minimalist coastal white villa in DHA Phase 8 Karachi near the Arabian Sea shoreline, warm afternoon sunset light, expansive glass frontage, high stone perimeter security wall, refined modern Pakistani architecture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzfDvhyPerHtzeENbo4hp4JDxpsYuirDgLKTu7dVmci_Y84pkhu6eT-9Cnn8SQtT6GzMjUe5ShuEZRXeTzUk3WlOd9AB1q0fIlW7er5qhzShoDSK2W9BQRtjQgUH4lPDzWLt69RJiZKF04T5itk9mgsfEuHZa0fKHqkZjb-BpvFxEDSzmUqTxT-M7XiQtWWSTGmYKWNX9LMJs2oR6tvDiUOY_6p66kLZ7FLDHWo2zwF6NXlkUY5umg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20"></div>
+<!-- Status -->
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]">home_repair_service</span> Pending Physical Inspection
+          </span>
+</div>
+<div class="absolute bottom-3 left-3">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider block">Demand Valuation</span>
+<p class="font-currency-display text-currency-display text-on-primary font-bold">PKR 14.50 Crore</p>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">500 Sq Yds Coastal Villa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+            Phase 8, DHA Karachi
+          </p>
+</div>
+<div class="flex items-center gap-space-md py-1 text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">straighten</span> 500 Sq Yds</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">bed</span> 4 Beds</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">directions_car</span> 3 Car Porch</span>
+</div>
+<!-- Custodian Note -->
+<div class="rounded-lg bg-surface-container-high p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_clock</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface block font-semibold">Site Inspection Assigned</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ARK Field Officer visiting on Friday</span>
+</div>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-semibold hover:underline" type="button">
+            Reschedule
+          </button>
+</div>
+<!-- Action Row -->
+<div class="pt-1 flex items-center gap-space-sm">
+<button class="w-full h-11 px-4 rounded-xl bg-primary-container text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-sm active:opacity-90" type="button">
+<span class="material-symbols-outlined text-[18px]">inventory</span> View Submission Dossier
+          </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Bottom Floating Action Bar with Primary Submit CTA -->
+<div class="fixed bottom-0 left-0 right-0 z-40 p-margin bg-surface/90 backdrop-blur-lg flex items-center justify-center max-w-md mx-auto">
+<button class="w-full h-13 py-3.5 px-6 rounded-xl bg-primary text-on-primary shadow-xl flex items-center justify-center gap-2 font-label-lg text-label-lg active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[22px]">add_home_work</span>
+<span>Submit New Property Listing</span>
+</button>
+</div>
+</div>
+<script>
+  // Filter Chip Micro-Interaction
+  document.querySelectorAll('.tab-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.tab-chip').forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      chip.classList.remove('bg-surface-container', 'text-on-surface');
+      chip.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+</script></main></body></html>

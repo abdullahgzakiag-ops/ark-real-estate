@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>ARK Real Estate</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span>09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="ARK Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VhmPVMKkveM1QqWIwc7iMrtmh1WWKmRyMr4gXcV3DtLsFTva41boOz2WHbbfFPG7DDx3YG3W37YLzGSTi-xjsBAD6o3an3AFsEEwkthOayFCBX_4M_6NDXgr-eSccbraPm3fp-_JtGz431Hha-tBGYUSSlBOEYGRARyY6BzEgMVgjs_eUJlekNyV_tsR0RZrWh98m9m2Z2U_X7_O9JVjXeD_ZamVSRyT65wX5uq516rfIqwgc8yd-IYs4"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1 cursor-pointer"><span class="font-label-md text-label-md text-primary font-bold truncate">Lahore, DHA Phase 5</span><span class="material-symbols-outlined text-[18px] text-primary flex-shrink-0">expand_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">ARK Real Estate • Home</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAVqf4wdnMmKDrSHmC8757UL0v0K4ccCVnkD1wCQTMDYsR-3y-TnnoljV-CMCwO2fE1MDL6SJjBKka7Kwkqn-4ouXhRTJJRfsbIBcn0XXpunzpw_KXAfJjM67KG33g3Bc8OY6j3tnkYWnfhc-Kx7eIvRZV7SnbDzXykjASln7f_9xm2435Jn7vccloHP-1o4wD6ExuA-t5tk8duFciqaFPzXbwKiBClOs4b6kIQ1Zcmp3YZIaNMiN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-24 bg-surface"><div class="flex flex-col w-full pb-6">
+<!-- Micro-City Quick Switch Bar -->
+<section class="px-margin pt-1 pb-3">
+<div class="flex items-center justify-between gap-space-sm overflow-x-auto scrollbar-none py-1">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-primary flex-shrink-0 cursor-pointer shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-md text-label-md font-bold">Lahore</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_drop_down</span>
+</div>
+<div class="flex items-center gap-space-xs flex-nowrap">
+<button class="city-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-label-md text-label-md transition-colors flex-shrink-0">
+          Karachi
+        </button>
+<button class="city-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-label-md text-label-md transition-colors flex-shrink-0">
+          Islamabad
+        </button>
+<button class="city-pill px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container font-label-md text-label-md transition-colors flex-shrink-0">
+          Rawalpindi
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Search Hub & Mode Switch -->
+<section class="px-margin mb-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<!-- Segmented Buy / Rent Switch -->
+<div class="flex items-center p-1 bg-surface-container-low rounded-lg relative" id="modeSwitchContainer">
+<button class="flex-1 py-2 text-center rounded-md font-label-lg text-label-lg font-bold bg-primary-container text-on-primary transition-all duration-200 z-10 flex items-center justify-center gap-1.5" id="buyTab">
+<span class="material-symbols-outlined text-[18px]">real_estate_agent</span>
+          Buy
+        </button>
+<button class="flex-1 py-2 text-center rounded-md font-label-lg text-label-lg font-medium text-on-surface-variant transition-all duration-200 z-10 flex items-center justify-center gap-1.5" id="rentTab">
+<span class="material-symbols-outlined text-[18px]">key</span>
+          Rent
+        </button>
+</div>
+<!-- Search Input Unit -->
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 flex items-center bg-surface-container-low rounded-xl px-3 py-2.5 gap-2 transition-all focus-within:bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px]">search</span>
+<input class="bg-transparent border-0 outline-none w-full font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:ring-0 p-0" placeholder="Search DHA, Bahria Town, Gulberg..." type="text"/>
+<button aria-label="Voice Search" class="text-secondary hover:text-primary transition-colors flex-shrink-0 p-1" title="Voice Search">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<button aria-label="Open Filter Drawer" class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container text-primary hover:bg-secondary-container transition-colors shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Quick Asset Category Navigation -->
+<section class="mb-space-lg">
+<div class="flex items-center gap-2.5 overflow-x-auto px-margin scrollbar-none pb-1">
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm whitespace-nowrap flex-shrink-0 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">cottage</span>
+        Houses
+      </button>
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm whitespace-nowrap flex-shrink-0 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">apartment</span>
+        Apartments
+      </button>
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm whitespace-nowrap flex-shrink-0 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">storefront</span>
+        Commercial Plots
+      </button>
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm whitespace-nowrap flex-shrink-0 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">folder_shared</span>
+        Files &amp; Projects
+      </button>
+<button class="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md shadow-sm whitespace-nowrap flex-shrink-0 font-bold hover:brightness-95 transition-all">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+        Post Ad
+        <span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded-full uppercase ml-0.5">Free</span>
+</button>
+</div>
+</section>
+<!-- High Impact Hero Ad Banner: "List a Property" -->
+<section class="px-margin mb-space-xl">
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-md shadow-lg">
+<div class="absolute -right-8 -bottom-8 w-36 h-36 rounded-full bg-tertiary-fixed/10 pointer-events-none"></div>
+<div class="absolute right-4 top-3 text-tertiary-fixed-dim/20 pointer-events-none">
+<span class="material-symbols-outlined text-[72px]">handshake</span>
+</div>
+<div class="relative z-10 flex flex-col gap-space-sm max-w-[80%]">
+<div class="inline-flex items-center gap-1.5 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Verified Direct Inquiries
+        </div>
+<h2 class="font-headline-sm text-headline-sm font-bold tracking-tight text-surface-bright">
+          Own property in Pakistan? List with ARK
+        </h2>
+<p class="font-body-sm text-body-sm text-surface-variant">
+          Connect directly with accredited Pakistani diaspora and local buyers. Zero hidden brokerage.
+        </p>
+<div class="pt-1">
+<button class="px-4 py-2.5 rounded-lg bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-md text-label-md font-bold shadow-md hover:brightness-105 active:scale-95 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            Post Free Ad
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Verified Listings Section -->
+<section class="mb-space-xl flex flex-col">
+<div class="px-margin flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Featured Listings</h3>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">Verified</span>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:text-primary font-bold transition-colors">
+        View All
+      </button>
+</div>
+<!-- Carousel Container -->
+<div class="flex gap-space-md overflow-x-auto px-margin scrollbar-none pb-2">
+<!-- Card 1: 1 Kanal Modern Luxury Villa in DHA Phase 6 -->
+<article class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern geometric architectural luxury villa exterior in DHA Lahore with floor-to-ceiling glass, beige travertine cladding, warm evening exterior LED perimeter lighting, manicured front lawn, and double car garage under dusk sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgwk7IEdm38PoRKWHySYXEEM-a-sITkx_hSJuliDgHzNqHC8buJeLUpUm7en0_NMljK7kZCarK7kkzexhJb1wmBG2JpzXnuZnhQUsyOf8T72H7m2Y7nBRPOxLe_p8Sqg6D1ODDsSckSTKK3uwe2xFiY94I9SrwMJVki7RLxCh32pC4rpUaK448X9yAHf_DdYOe4LKa3XX01q1EG4P0jodT5CLLSW-Dm4hrpIXy0HjFVY5_bCLaFJgw"/>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            ARK Verified
+          </div>
+<button aria-label="Bookmark property" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 backdrop-blur-sm text-on-primary px-3 py-1 rounded-md font-currency-display text-currency-display font-bold shadow-md">
+            PKR 8.5 Crore
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">DHA Phase 6, Lahore</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary truncate">1 Kanal Modern Luxury Villa</h4>
+<div class="flex items-center gap-3 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span>5 Beds</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bathtub</span>
+<span>6 Baths</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">square_foot</span>
+<span>4,500 sq ft</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: 2-Bed Luxury Executive Apartment, Clifton Block 4 -->
+<article class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High-rise coastal luxury executive apartment living room interior overlooking Clifton beach Karachi with panoramic floor-to-ceiling glass ocean view, minimalist contemporary white marble styling and golden afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmNralGanUACKz8vglJx7S4RdHojqPJX9Co5IWmGHVFx4UYDTyVD9WF-ZLx5y2NdSCFWWr1wDkWZupQqU2_3oQCsPG5SRUJdG2YFX06teBwsbKsUGTDToXvdZFhkrbFw9faHZQOPAfxXc9W9XddiEZCYW9G0WB4OlbuCHii-fHgiv2tkl8o0VQNThiA0nlzgBDRLaH7Gvw4avnCvCG3-UEW7m1zGBtwgvIY2iGZxv1ycQrNEJxe0L4"/>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            ARK Verified
+          </div>
+<button aria-label="Bookmark property" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 backdrop-blur-sm text-on-primary px-3 py-1 rounded-md font-currency-display text-currency-display font-bold shadow-md">
+            PKR 4.2 Crore
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Clifton Block 4, Karachi</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary truncate">2-Bed Executive Apartment</h4>
+<div class="flex items-center gap-3 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span>2 Beds</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bathtub</span>
+<span>3 Baths</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">directions_car</span>
+<span>Reserved Park</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: 10 Marla Designer House, Bahria Town Phase 8 -->
+<article class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Contemporary 10 marla architectural duplex family home in Bahria Town Rawalpindi with grey stone accents, wooden louvers on modern balcony, landscaped entrance porch under soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIAkgEiiZA0oKKx1I7T6iYPgab65jRC84RnTR79kH6Ltm2ic2T34vTCAS8frBvNicBAhfzhBXEX-iC9WsU5wtgU8Sl1szTeCnretDcFZP5mbK-n8-3hpruqw8jh1SrD7m0DIsqbv2OLOANKHgrGxzRjmNLBEbDATj1zyv-wjbeJmYISk-MC4SRXU1Edk8o74511ZUvb0jvNt4gOTDZoIuEIWjBNtQZf6MTXd8IfuBbfdNmM4JQtPeL"/>
+<div class="absolute top-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+            ARK Verified
+          </div>
+<button aria-label="Bookmark property" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-2 left-2 bg-primary-container/90 backdrop-blur-sm text-on-primary px-3 py-1 rounded-md font-currency-display text-currency-display font-bold shadow-md">
+            PKR 3.85 Crore
+          </div>
+</div>
+<div class="p-space-md flex flex-col gap-1.5 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Bahria Town Phase 8, Rawalpindi</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary truncate">10 Marla Designer House</h4>
+<div class="flex items-center gap-3 pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bed</span>
+<span>4 Beds</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bathtub</span>
+<span>5 Baths</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">straighten</span>
+<span>2,250 sq ft</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Market Insights & City Trends -->
+<section class="px-margin mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Lahore Market Trend</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Q3 Sector Benchmark Index</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+          +4.2%
+        </div>
+</div>
+<!-- Trend Card Data Split -->
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg. Residential Price</span>
+<span class="font-currency-display text-currency-display text-primary mt-0.5">PKR 38.5 Lac</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">per Marla in DHA</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rental Yield Index</span>
+<span class="font-currency-display text-currency-display text-primary mt-0.5">5.8% p.a.</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-medium mt-0.5">+0.6% vs Q2</span>
+</div>
+</div>
+<!-- Sparkline Visual Component -->
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Quarterly Growth Velocity</span>
+<div class="w-36 h-6">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 100 24">
+<path d="M0 20 L20 18 L40 14 L60 16 L80 8 L100 4" stroke="#455f87" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="100" cy="4" fill="#c5a059" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- Property Management Portal Entry Card -->
+<section class="px-margin mb-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-tertiary-fixed-dim flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary truncate">Property Management</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Manage tenants, rent schedules &amp; expenses
+          </p>
+</div>
+</div>
+<button aria-label="Open Management Portal" class="w-10 h-10 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center flex-shrink-0 shadow-sm hover:bg-primary-container hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Manual Payment & Regulatory Disclosure Badge -->
+<section class="px-margin">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">ARK Custody &amp; Verification Protocol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          All property deeds, plots, and tenancy escrows adhere strictly to provincial land authorities (LDA, KDA, CDA).
+        </p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initHomeScreenInteractions() {
+    const buyBtn = document.getElementById('buyTab');
+    const rentBtn = document.getElementById('rentTab');
+    if (!buyBtn || !rentBtn) return;
+
+    buyBtn.addEventListener('click', () => {
+      buyBtn.classList.remove('font-medium', 'text-on-surface-variant');
+      buyBtn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+
+      rentBtn.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+      rentBtn.classList.add('font-medium', 'text-on-surface-variant');
+    });
+
+    rentBtn.addEventListener('click', () => {
+      rentBtn.classList.remove('font-medium', 'text-on-surface-variant');
+      rentBtn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+
+      buyBtn.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+      buyBtn.classList.add('font-medium', 'text-on-surface-variant');
+    });
+
+    const cityPills = document.querySelectorAll('.city-pill');
+    cityPills.forEach(pill => {
+      pill.addEventListener('click', function() {
+        cityPills.forEach(p => p.classList.remove('bg-surface-container-high', 'text-primary', 'font-bold'));
+        this.classList.add('bg-surface-container-high', 'text-primary', 'font-bold');
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,30,54,0.06)]" data-active-classes="text-primary-container font-bold [&amp;_span.icon-indicator]:bg-secondary-container [&amp;_span.icon-indicator]:text-primary-container"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] transition-all text-primary-container font-bold [&amp;_span.icon-indicator]:bg-secondary-container [&amp;_span.icon-indicator]:text-primary-container" data-path="home" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">home</span></span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="property-search" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="saved-properties" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark</span></span><span class="font-label-sm text-label-sm mt-0.5">Saved</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="client-inquiries" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></span><span class="font-label-sm text-label-sm mt-0.5">Inquiries</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="estate-management" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">domain</span></span><span class="font-label-sm text-label-sm mt-0.5">Manage</span></a></div></nav></body></html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><title>ARK Real Estate</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Top App Navigation / Language Utility Bar -->
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low shadow-sm">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-xl">shield_person</span>
+<span class="font-label-md text-label-md text-secondary tracking-wide">VERIFIED SECURE ACCESS</span>
+</div>
+<!-- Bi-directional Language Switcher -->
+<div class="relative flex items-center bg-surface-container p-1 rounded-full shadow-inner" id="lang-switch-container">
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 bg-primary-container text-on-primary shadow-sm" id="lang-en" onclick="toggleLanguage('en')">
+        English
+      </button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="lang-ur" onclick="toggleLanguage('ur')">
+        اردو
+      </button>
+</div>
+</div>
+<!-- Editorial Brand Lockup & Context Graphic -->
+<div class="px-5 pt-4 pb-2 flex flex-col items-center text-center">
+<!-- Emblem Anchor -->
+<div class="w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-md mb-3 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent via-primary-fixed-dim/10 to-transparent"></div>
+<span class="material-symbols-outlined text-3xl text-tertiary-fixed font-bold">domain</span>
+</div>
+<div class="flex items-center space-x-1.5">
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold">ARK</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest">Real Estate</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mt-0.5">Pakistan's Trusted Real Estate Marketplace &amp; Management</p>
+</div>
+<!-- Warm Graphic Accent: Architectural Visual Card -->
+<div class="px-4 py-2">
+<div class="relative w-full h-28 rounded-2xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High-end modern luxury architectural residential development in Islamabad Pakistan with Margalla Hills in the calm dusk twilight. Deep navy tones, ambient gold courtyard illumination, refined corporate editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwMgp7H4bAChjQt1Ygh6JL62IiPUSy4z5D30JTpPXLEtFXJhqzuzyvPvctfm4XthPHYqUHwZNlWuFRLdR1p-0mquLDVqFhjAMd7jSWupqgQTNc_7UCn2uPJ7gv3CPd2ppFzCyjEYva2cm42OFRMLS32bN-Mu_8Id6dZR5A5xK9i4LQymCNp23MjpGb_3WqJkOeHyeWGVgM0MNzmsifVCfJD3ggsE5kpSsygTL-KbAdzbopruKvdAIP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent flex items-end p-3.5">
+<div class="flex items-center space-x-2 text-on-primary">
+<span class="material-symbols-outlined text-tertiary-fixed text-lg" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-wide">CDA &amp; LDA Compliant Property Registry</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Heading Block -->
+<div class="px-5 pt-2 pb-1">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface leading-snug">Welcome to ARK Real Estate</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Sign in or register your account to explore or manage properties across Pakistan.</p>
+</div>
+<!-- Segmented Tabs: Sign In / Create Account -->
+<div class="px-4 py-3">
+<div class="w-full bg-surface-container-high p-1.5 rounded-xl flex items-center">
+<button class="flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 text-on-surface-variant" id="tab-signin" onclick="switchAuthTab('signin')" type="button">
+        Sign In
+      </button>
+<button class="flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm" id="tab-create" onclick="switchAuthTab('create')" type="button">
+        Create Account
+      </button>
+</div>
+</div>
+<form class="flex flex-col space-y-5 px-4 pt-1" id="registration-form" onsubmit="event.preventDefault(); handleRegistrationSubmit();">
+<!-- Role Selection (Select your Persona) -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-lg text-label-lg text-on-surface">Select Primary Account Role</span>
+<span class="font-label-sm text-label-sm text-secondary">Step 1 of 2</span>
+</div>
+<div aria-label="Account Role" class="flex flex-col space-y-2.5" role="radiogroup">
+<!-- Role 1: Property Seeker / Tenant -->
+<label class="role-card relative flex items-start p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none">
+<input checked="" class="sr-only" name="account_role" onchange="highlightSelectedRole(this)" type="radio" value="seeker"/>
+<div class="role-icon-box w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-primary-container mr-3.5 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-2xl">search_insights</span>
+</div>
+<div class="flex-1 pr-6">
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Property Seeker / Tenant</span>
+<span class="px-1.5 py-0.2 bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Popular</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Browse, save verified listings, submit inquiries &amp; schedule physical inspections.</p>
+</div>
+<div class="role-check absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</label>
+<!-- Role 2: Owner / Landlord -->
+<label class="role-card relative flex items-start p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none">
+<input class="sr-only" name="account_role" onchange="highlightSelectedRole(this)" type="radio" value="landlord"/>
+<div class="role-icon-box w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-primary-container mr-3.5 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-2xl">real_estate_agent</span>
+</div>
+<div class="flex-1 pr-6">
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Owner / Landlord</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">List plots or residences, screen tenants, log rent vouchers &amp; track expenses.</p>
+</div>
+<div class="role-check hidden absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</label>
+<!-- Role 3: Real Estate Agent / Consultant -->
+<label class="role-card relative flex items-start p-3.5 rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none">
+<input class="sr-only" name="account_role" onchange="highlightSelectedRole(this)" type="radio" value="agent"/>
+<div class="role-icon-box w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-primary-container mr-3.5 shrink-0 transition-colors">
+<span class="material-symbols-outlined text-2xl">badge</span>
+</div>
+<div class="flex-1 pr-6">
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Real Estate Agent / Consultant</span>
+<span class="px-1.5 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed rounded font-label-sm text-label-sm">Pro</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Verified broker profile, multi-listing inventory sync, CRM and direct lead routing.</p>
+</div>
+<div class="role-check hidden absolute top-3.5 right-3.5 w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Registration Input Stack -->
+<div class="flex flex-col space-y-4 pt-1">
+<!-- Full Name -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center space-x-1" for="fullname">
+<span>Legal Full Name</span>
+<span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-xl pointer-events-none">person</span>
+<input class="w-full h-13 pl-11 pr-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-bright transition-all" id="fullname" placeholder="e.g. Tariq Mehmood" required="" type="text"/>
+</div>
+</div>
+<!-- Mobile Number with PK Badge -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="mobile">
+<span class="flex items-center space-x-1">
+<span>Mobile Number</span>
+<span class="text-error">*</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary">Pakistan cellular networks</span>
+</label>
+<div class="relative flex items-center rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- PK Flag Prefix Block -->
+<div class="flex items-center space-x-1.5 pl-3.5 pr-2.5 py-3 bg-surface-container-low shrink-0 select-none">
+<!-- Inline Mini Pakistan Flag SVG -->
+<svg class="w-5 h-3.5 rounded-xs shrink-0 shadow-xs" viewbox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#01411C" height="400" width="600"></rect>
+<rect fill="#FFFFFF" height="400" width="150"></rect>
+<circle cx="390" cy="200" fill="#FFFFFF" r="100"></circle>
+<circle cx="420" cy="180" fill="#01411C" r="92"></circle>
+<polygon fill="#FFFFFF" points="415,135 423,160 448,152 428,168 444,188 423,178 411,200 411,175 388,168 411,155"></polygon>
+</svg>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold tracking-wide">+92</span>
+</div>
+<input class="w-full h-13 px-3 py-3 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" id="mobile" maxlength="11" placeholder="300 1234567" required="" type="tel"/>
+</div>
+<div class="flex items-center space-x-1.5 px-1 pt-0.5">
+<span class="material-symbols-outlined text-secondary text-sm">sms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">A 6-digit verification OTP will be sent via SMS / WhatsApp.</span>
+</div>
+</div>
+<!-- City of Residence Dropdown -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center space-x-1" for="city">
+<span>Primary City of Residence</span>
+<span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-xl pointer-events-none">location_city</span>
+<select class="w-full h-13 pl-11 pr-10 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm appearance-none focus:outline-none focus:bg-surface-bright transition-all" id="city" required="">
+<option disabled="" selected="" value="">Select your city...</option>
+<option value="lahore">Lahore (DHA, Bahria, Gulberg)</option>
+<option value="karachi">Karachi (Clifton, DHA, Bahria Town)</option>
+<option value="islamabad">Islamabad (CDA Sectors, Bahria, DHA)</option>
+<option value="rawalpindi">Rawalpindi (Chaklala, Bahria, Cantt)</option>
+<option value="peshawar">Peshawar (Hayatabad, DHA, University Town)</option>
+<option value="multan">Multan (DHA, Cantt, Bosan Road)</option>
+<option value="faisalabad">Faisalabad (Canal Road, Madina Town)</option>
+<option value="other">Other Metropolitan / Tehsil</option>
+</select>
+<span class="material-symbols-outlined absolute right-3.5 text-secondary text-xl pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Email Address (Optional) -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="email">
+<span>Email Address</span>
+<span class="font-label-sm text-label-sm text-outline">Optional (For deeds &amp; receipts)</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-xl pointer-events-none">mail</span>
+<input class="w-full h-13 pl-11 pr-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-bright transition-all" id="email" placeholder="tariq@example.com" type="email"/>
+</div>
+</div>
+<!-- Password Field with Show/Hide Toggle -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center space-x-1" for="password">
+<span>Create Security Pin / Password</span>
+<span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-secondary text-xl pointer-events-none">lock</span>
+<input class="w-full h-13 pl-11 pr-12 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-outline shadow-sm focus:outline-none focus:bg-surface-bright transition-all" id="password" minlength="8" placeholder="Minimum 8 characters" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3.5 text-secondary hover:text-on-surface transition-colors p-1" id="toggle-pwd-btn" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-xl" id="pwd-icon">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Regulatory Disclosure & Consent Checkbox -->
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-start space-x-3 shadow-xs">
+<input class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer shrink-0" id="terms" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface leading-snug cursor-pointer" for="terms">
+        I agree to the <a class="text-secondary font-semibold underline" href="#terms">ARK Terms of Service</a> and confirm that property ownership or tenancy contracts are subject to verification against local Pakistani development authority records.
+      </label>
+</div>
+<!-- Primary Action Button -->
+<div class="pt-2">
+<button class="w-full h-13 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center space-x-2 shadow-md active:scale-[0.99] transition-transform duration-100" id="submit-btn" type="submit">
+<span>Continue to Role Setup</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+<!-- Alternative Sign-in Separator -->
+<div class="flex items-center my-2">
+<div class="flex-1 h-px bg-surface-container-high"></div>
+<span class="px-3 font-label-sm text-label-sm text-outline uppercase tracking-wider">or verify instantly with</span>
+<div class="flex-1 h-px bg-surface-container-high"></div>
+</div>
+<!-- Social / Fast Auth Buttons -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Google Auth Button -->
+<button class="h-12 px-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md flex items-center justify-center space-x-2 active:bg-surface-container-high transition-colors" onclick="triggerOAuth('Google')" type="button">
+<svg class="w-4 h-4 shrink-0" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="truncate">Google</span>
+</button>
+<!-- Mobile OTP Instant Sign-in -->
+<button class="h-12 px-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md flex items-center justify-center space-x-2 active:bg-surface-container-high transition-colors" onclick="triggerOAuth('WhatsApp OTP')" type="button">
+<span class="material-symbols-outlined text-xl text-secondary">mark_chat_unread</span>
+<span class="truncate">WhatsApp OTP</span>
+</button>
+</div>
+<!-- Trust Stamp & Support Footer -->
+<div class="pt-4 flex flex-col items-center text-center space-y-2">
+<div class="flex items-center space-x-1.5 text-secondary">
+<span class="material-symbols-outlined text-base">lock</span>
+<span class="font-label-sm text-label-sm">256-Bit SSL Encrypted &amp; Custodian Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+        Need assistance with manual bank slips or deed records? <br/>
+<a class="text-secondary font-semibold underline" href="#support">Contact ARK Estate Concierge (+92 51 111-ARK-PK)</a>
+</p>
+</div>
+</form>
+</div>
+<script>
+  // Language switch handler
+  function toggleLanguage(lang) {
+    const btnEn = document.getElementById('lang-en');
+    const btnUr = document.getElementById('lang-ur');
+    if (lang === 'ur') {
+      btnUr.className = 'px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 bg-primary-container text-on-primary shadow-sm';
+      btnEn.className = 'px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface';
+      document.documentElement.dir = 'rtl';
+    } else {
+      btnEn.className = 'px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 bg-primary-container text-on-primary shadow-sm';
+      btnUr.className = 'px-3 py-1 rounded-full font-label-sm text-label-sm transition-all duration-200 text-on-surface-variant hover:text-on-surface';
+      document.documentElement.dir = 'ltr';
+    }
+  }
+
+  // Switch between Sign In / Create Account
+  function switchAuthTab(mode) {
+    const tabSignIn = document.getElementById('tab-signin');
+    const tabCreate = document.getElementById('tab-create');
+    const submitBtn = document.getElementById('submit-btn');
+
+    if (mode === 'signin') {
+      tabSignIn.className = 'flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm';
+      tabCreate.className = 'flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 text-on-surface-variant';
+      if (submitBtn) {
+        submitBtn.innerHTML = '<span>Sign In to Account</span><span class="material-symbols-outlined text-xl">login</span>';
+      }
+    } else {
+      tabCreate.className = 'flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 bg-surface-container-lowest text-on-surface shadow-sm';
+      tabSignIn.className = 'flex-1 py-2.5 rounded-lg text-center font-label-lg text-label-lg transition-all duration-200 text-on-surface-variant';
+      if (submitBtn) {
+        submitBtn.innerHTML = '<span>Continue to Role Setup</span><span class="material-symbols-outlined text-xl">arrow_forward</span>';
+      }
+    }
+  }
+
+  // Visual selection highlighting for Role Cards
+  function highlightSelectedRole(radioInput) {
+    const cards = document.querySelectorAll('.role-card');
+    cards.forEach(card => {
+      const isCurrent = card.contains(radioInput);
+      const checkGlyph = card.querySelector('.role-check');
+      const iconBox = card.querySelector('.role-icon-box');
+
+      if (isCurrent) {
+        card.classList.add('bg-surface-bright', 'shadow-md');
+        card.classList.remove('bg-surface-container-lowest', 'shadow-sm');
+        if (checkGlyph) checkGlyph.classList.remove('hidden');
+        if (iconBox) {
+          iconBox.classList.add('bg-primary-container', 'text-on-primary');
+          iconBox.classList.remove('bg-surface-container', 'text-on-primary-container');
+        }
+      } else {
+        card.classList.remove('bg-surface-bright', 'shadow-md');
+        card.classList.add('bg-surface-container-lowest', 'shadow-sm');
+        if (checkGlyph) checkGlyph.classList.add('hidden');
+        if (iconBox) {
+          iconBox.classList.remove('bg-primary-container', 'text-on-primary');
+          iconBox.classList.add('bg-surface-container', 'text-on-primary-container');
+        }
+      }
+    });
+  }
+
+  // Password visibility micro-interaction
+  function togglePasswordVisibility() {
+    const pwdInput = document.getElementById('password');
+    const pwdIcon = document.getElementById('pwd-icon');
+    if (pwdInput.type === 'password') {
+      pwdInput.type = 'text';
+      pwdIcon.textContent = 'visibility_off';
+    } else {
+      pwdInput.type = 'password';
+      pwdIcon.textContent = 'visibility';
+    }
+  }
+
+  // Form submission feedback
+  function handleRegistrationSubmit() {
+    const submitBtn = document.getElementById('submit-btn');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-xl">progress_activity</span><span>Verifying & Sending OTP...</span>';
+    
+    setTimeout(() => {
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-xl">mark_email_read</span><span>OTP Sent to +92 Mobile!</span>';
+      submitBtn.classList.remove('bg-primary-container');
+      submitBtn.classList.add('bg-secondary');
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        submitBtn.classList.remove('bg-secondary');
+        submitBtn.classList.add('bg-primary-container');
+      }, 2500);
+    }, 1200);
+  }
+
+  function triggerOAuth(provider) {
+    const submitBtn = document.getElementById('submit-btn');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-xl">progress_activity</span><span>Authenticating via ' + provider + '...</span>';
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<span>Continue to Role Setup</span><span class="material-symbols-outlined text-xl">arrow_forward</span>';
+    }, 1500);
+  }
+
+  // Initialize initial role selection styles on load
+  document.addEventListener('DOMContentLoaded', () => {
+    const checked = document.querySelector('input[name="account_role"]:checked');
+    if (checked) {
+      highlightSelectedRole(checked);
+    }
+  });
+</script></main></body></html>

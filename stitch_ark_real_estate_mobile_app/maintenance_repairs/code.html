@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>ARK Real Estate - Estate Management</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#364762", "error": "#ba1a1a", "surface-tint": "#4e5f7a", "tertiary-fixed-dim": "#e9c176", "surface-container": "#e7eeff", "secondary-container": "#b5d0fd", "on-tertiary-fixed": "#261900", "on-primary-container": "#7586a3", "on-surface-variant": "#44474d", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "on-primary": "#ffffff", "tertiary": "#060300", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001c3b", "on-secondary-fixed-variant": "#2d486d", "on-surface": "#111c2d", "tertiary-container": "#291b00", "secondary-fixed-dim": "#adc8f5", "on-tertiary-fixed-variant": "#5d4201", "tertiary-fixed": "#ffdea5", "outline-variant": "#c4c6ce", "background": "#f9f9ff", "on-secondary-container": "#3e5980", "on-tertiary-container": "#a2803d", "error-container": "#ffdad6", "primary-fixed-dim": "#b6c7e7", "on-tertiary": "#ffffff", "on-error": "#ffffff", "secondary-fixed": "#d5e3ff", "surface-container-low": "#f0f3ff", "secondary": "#455f87", "on-primary-fixed": "#091c34", "primary-fixed": "#d5e3ff", "inverse-on-surface": "#ecf1ff", "inverse-primary": "#b6c7e7", "surface": "#f9f9ff", "on-background": "#111c2d", "on-error-container": "#93000a", "primary-container": "#0b1e36", "outline": "#74777e", "surface-container-high": "#dee8ff", "primary": "#00040e", "surface-variant": "#d8e3fb", "surface-container-highest": "#d8e3fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-xl": "2rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-sm": "0.5rem" }, fontFamily: { "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "headline-xl": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }], "currency-display": ["1.375rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-sm": ["0.75rem", { "lineHeight": "1.125rem", "fontWeight": "400" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["1.125rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;min-height:max(884px,100dvh);}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm select-none"><span>09:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[16px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="ARK Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VhmPVMKkveM1QqWIwc7iMrtmh1WWKmRyMr4gXcV3DtLsFTva41boOz2WHbbfFPG7DDx3YG3W37YLzGSTi-xjsBAD6o3an3AFsEEwkthOayFCBX_4M_6NDXgr-eSccbraPm3fp-_JtGz431Hha-tBGYUSSlBOEYGRARyY6BzEgMVgjs_eUJlekNyV_tsR0RZrWh98m9m2Z2U_X7_O9JVjXeD_ZamVSRyT65wX5uq516rfIqwgc8yd-IYs4"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1 cursor-pointer"><span class="font-label-md text-label-md text-primary font-bold truncate">Lahore, DHA Phase 5</span><span class="material-symbols-outlined text-[18px] text-primary flex-shrink-0">expand_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">ARK Real Estate • Estate Management</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-variant transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAVqf4wdnMmKDrSHmC8757UL0v0K4ccCVnkD1wCQTMDYsR-3y-TnnoljV-CMCwO2fE1MDL6SJjBKka7Kwkqn-4ouXhRTJJRfsbIBcn0XXpunzpw_KXAfJjM67KG33g3Bc8OY6j3tnkYWnfhc-Kx7eIvRZV7SnbDzXykjASln7f_9xm2435Jn7vccloHP-1o4wD6ExuA-t5tk8duFciqaFPzXbwKiBClOs4b6kIQ1Zcmp3YZIaNMiN"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-22 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Component -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 transform -translate-y-2 bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-xs max-w-[90vw]" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span>
+<span class="font-label-md text-label-md truncate" id="toast-message">Status updated successfully</span>
+</div>
+<!-- Header Intro & Metric Highlights -->
+<div class="px-margin pt-space-sm pb-space-xs flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Maintenance &amp; Repairs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ARK Asset Custody &amp; Operations Portfolio</p>
+</div>
+<button aria-label="Quick Sync" class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center hover:bg-secondary-container transition-colors" onclick="showToast('Refreshing ledger logs...')">
+<span class="material-symbols-outlined text-[20px]">sync</span>
+</button>
+</div>
+<!-- Top Stats Banner Carousel / Grid -->
+<div class="grid grid-cols-3 gap-2.5 mt-space-xs">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">build_circle</span>
+</span>
+<span class="font-label-sm text-label-sm font-bold text-error">Urgent</span>
+</div>
+<div class="mt-2">
+<p class="font-headline-md text-headline-md font-bold text-primary">3</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Active Tickets</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">pending_actions</span>
+</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">Review</span>
+</div>
+<div class="mt-2">
+<p class="font-headline-md text-headline-md font-bold text-primary">1</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">In Progress</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+</span>
+<span class="font-label-sm text-label-sm font-bold text-on-tertiary-container">MTD</span>
+</div>
+<div class="mt-2">
+<p class="font-label-lg text-label-lg font-bold text-primary truncate">PKR 45K</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Disbursed</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Tabs Navigation -->
+<div class="px-margin mt-space-md">
+<div class="bg-surface-container-high p-1 rounded-xl flex items-center gap-1">
+<button class="flex-1 py-2 px-2 rounded-lg font-label-md text-label-md font-semibold text-center transition-all bg-surface-container-lowest text-primary shadow-sm" id="tab-active" onclick="switchFilter('active')">
+        Active (3)
+      </button>
+<button class="flex-1 py-2 px-2 rounded-lg font-label-md text-label-md font-semibold text-center transition-all text-on-surface-variant hover:text-primary" id="tab-review" onclick="switchFilter('review')">
+        In Review (1)
+      </button>
+<button class="flex-1 py-2 px-2 rounded-lg font-label-md text-label-md font-semibold text-center transition-all text-on-surface-variant hover:text-primary" id="tab-resolved" onclick="switchFilter('resolved')">
+        Resolved (8)
+      </button>
+</div>
+</div>
+<!-- Maintenance Ticket Cards Stream -->
+<div class="px-margin mt-space-md flex flex-col gap-space-md">
+<!-- Ticket 1: Urgent (HVAC Compressor) -->
+<article class="ticket-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md" data-filter="active">
+<!-- Media Header with Overlay Details -->
+<div class="relative h-40 w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="A modern Pakistani luxury villa rooftop and patio area with central HVAC cooling condenser units under bright afternoon daylight with clean architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuNhagTuhiOxun2Xo11r0hc7NEPavNP3h8cR_rKfZNOodlSe8E0q-KD1YAg5VOFaAx9LtjzKfn6LfC8QttXPHuYxPP7Nxe9xER_0VN18qvSkytKbMlRs13aGOQF1207j4EN1NDhF_fImwEwwZHVJ2JhyBjZzYiL4hDU8dNypZM8O8jIzpMqyHcZPt1ZEnb-X1SWEb7un74yEi7od1wNcvZzC3P5WiVTa782GAaCUSKzSJtcCjKchiR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 bg-error-container text-on-error-container px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold">High / Urgent</span>
+</div>
+<div class="absolute top-3 right-3 bg-primary-container/80 backdrop-blur-md text-on-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm">
+          WO #4092
+        </div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="min-w-0 pr-2">
+<p class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider truncate">1 Kanal Villa • DHA Phase 6</p>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-primary truncate">HVAC AC Compressor Fault</h2>
+</div>
+<div class="text-right flex-shrink-0">
+<span class="font-label-sm text-label-sm text-primary-fixed block">Est. Cost</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary-fixed">PKR 28,000</span>
+</div>
+</div>
+</div>
+<!-- Ticket Core Details -->
+<div class="p-space-md flex flex-col gap-3">
+<!-- Property & Tenant Strip -->
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">location_on</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Sector J, Street 14, Lahore</span>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">person</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Hamza Malik</span>
+</div>
+</div>
+<!-- Vendor & Dispatch Progress Box -->
+<div class="bg-surface-container rounded-xl p-3 flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-bold text-primary truncate">Al-Madina Air Conditioning Services</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Assigned: Bilal Ahmad (Lead Tech)</p>
+</div>
+</div>
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex-shrink-0">
+              Today 2 PM
+            </span>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">Status: Technician Dispatched to Premises</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="h-11 rounded-xl bg-surface-container-high text-primary flex items-center justify-center gap-1.5 font-label-md text-label-md font-bold hover:bg-surface-variant transition-colors" href="tel:+923001234567" onclick="showToast('Calling Al-Madina Support (+92 300 1234567)...')">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+            Call Vendor
+          </a>
+<button class="h-11 rounded-xl bg-primary-container text-on-primary flex items-center justify-center gap-1.5 font-label-md text-label-md font-bold hover:bg-primary transition-colors shadow-sm" onclick="showToast('Ticket #4092 marked as In-Inspection')">
+<span class="material-symbols-outlined text-[18px]">update</span>
+            Update Status
+          </button>
+</div>
+</div>
+</article>
+<!-- Ticket 2: Normal / In Review (Water Tank Sensor) -->
+<article class="ticket-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md" data-filter="review">
+<div class="p-space-md flex flex-col gap-3">
+<!-- Header Strip -->
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold">
+                Medium Priority
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WO #4088</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary truncate">Water Tank Sensor Repair</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">storefront</span>
+              Commercial Shop #12, Y-Block DHA Lahore
+            </p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">water_damage</span>
+</div>
+</div>
+<!-- Quotation Breakdown Box -->
+<div class="bg-surface-container-low p-3 rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vendor Quotation</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">PKR 14,500</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Parts: Ultrasonic Relay Switch</span>
+<span>PKR 9,500</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Labor &amp; Calibration (Smart Homes PK)</span>
+<span>PKR 5,000</span>
+</div>
+<div class="mt-1 pt-1.5 flex items-center gap-1.5 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span class="font-label-sm text-label-sm font-bold">Status: Awaiting Owner Approval</span>
+</div>
+</div>
+<!-- Approval Action Row -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="h-11 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center gap-1.5 font-label-md text-label-md font-semibold hover:bg-error-container hover:text-on-error-container transition-colors" onclick="declineQuotation(this)">
+<span class="material-symbols-outlined text-[18px]">close</span>
+            Decline
+          </button>
+<button class="h-11 rounded-xl bg-primary text-on-primary flex items-center justify-center gap-1.5 font-label-md text-label-md font-bold hover:bg-primary-container transition-colors shadow-sm" onclick="approveQuotation(this)">
+<span class="material-symbols-outlined text-[18px]">check</span>
+            Approve Quotation
+          </button>
+</div>
+</div>
+</article>
+<!-- Ticket 3: Completed / Resolved (Solar Firmware) -->
+<article class="ticket-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all hover:shadow-md" data-filter="resolved">
+<div class="p-space-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+                Resolved &amp; Paid
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WO #3994</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary truncate">Solar Inverter Firmware Sync</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">apartment</span>
+              Sector F-7, Islamabad Property Asset
+            </p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">solar_power</span>
+</div>
+</div>
+<!-- Settlement Summary -->
+<div class="bg-surface-container-low px-3 py-2.5 rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Settled Amount</span>
+<span class="font-label-md text-label-md font-bold text-primary">PKR 5,000</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Vendor Verified</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Inverex Tech Support</span>
+</div>
+<button class="h-9 px-3 rounded-lg bg-surface-container-high text-primary flex items-center gap-1 font-label-sm text-label-sm font-bold hover:bg-secondary-container transition-colors" onclick="showToast('Downloading stamped tax invoice receipt...')">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+            Voucher
+          </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Compliance Disclosure Badge (Pakistan Real Estate Custody Protocol) -->
+<div class="px-margin mt-space-lg mb-space-sm">
+<div class="bg-surface-container-low p-3.5 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5 flex-shrink-0">shield_with_heart</span>
+<div class="flex flex-col gap-0.5">
+<p class="font-label-md text-label-md font-bold text-primary">ARK Estate Governance Protocol</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Work orders and vendor vouchers can be attached directly to the property expense ledger for automated PKR income tax withholding and tenancy audit verification.
+        </p>
+</div>
+</div>
+</div>
+<!-- Primary Action: Log New Maintenance Issue -->
+<div class="px-margin mt-space-sm pb-space-lg">
+<button class="w-full h-13 py-3.5 px-space-md rounded-xl bg-primary text-on-primary flex items-center justify-center gap-2 font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" onclick="openNewTicketModal()">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+      Log New Maintenance Issue
+    </button>
+</div>
+<!-- Dynamic New Maintenance Bottom Sheet / Modal -->
+<div class="fixed inset-0 z-50 bg-primary-container/40 backdrop-blur-sm hidden flex-col justify-end" id="new-ticket-sheet">
+<div class="bg-surface-container-lowest w-full rounded-t-2xl p-space-md flex flex-col gap-space-md max-h-[751px] overflow-y-auto shadow-2xl">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">handyman</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">New Maintenance Request</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Create and assign to verified local vendor</p>
+</div>
+</div>
+<button aria-label="Close Modal" class="w-9 h-9 rounded-full bg-surface-container text-on-surface flex items-center justify-center" onclick="closeNewTicketModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Quick Form -->
+<form class="flex flex-col gap-3.5" onsubmit="handleNewTicket(event)">
+<div>
+<label class="font-label-sm text-label-sm font-bold text-on-surface-variant block mb-1">Select Property</label>
+<div class="relative">
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-primary font-body-md text-body-md appearance-none" required="">
+<option value="1">1 Kanal Villa, Sector J, DHA Phase 6, Lahore</option>
+<option value="2">Commercial Shop #12, Y-Block DHA Lahore</option>
+<option value="3">Sector F-7 Villa, Islamabad</option>
+<option value="4">Gulberg III Luxury Suite, Lahore</option>
+</select>
+<span class="material-symbols-outlined text-[20px] absolute right-3 top-3 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-bold text-on-surface-variant block mb-1">Fault Category &amp; Summary</label>
+<input class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-primary font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container transition-colors" placeholder="e.g. Generator Automatic Transfer Switch (ATS) Fault" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-2.5">
+<div>
+<label class="font-label-sm text-label-sm font-bold text-on-surface-variant block mb-1">Priority</label>
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-primary font-body-md text-body-md appearance-none">
+<option>Urgent / 24 Hours</option>
+<option selected="">Medium Priority</option>
+<option>Low / Routine</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-bold text-on-surface-variant block mb-1">Est. Budget (PKR)</label>
+<input class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-primary font-body-md text-body-md outline-none focus:bg-surface-container transition-colors" placeholder="15000" type="number"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-bold text-on-surface-variant block mb-1">Assign Vendor</label>
+<div class="relative">
+<select class="w-full h-12 px-3 rounded-xl bg-surface-container-low text-primary font-body-md text-body-md appearance-none">
+<option>Al-Madina Air Conditioning &amp; Electric</option>
+<option>Smart Homes PK (Sensors &amp; Solar)</option>
+<option>DHA Fast Plumbing &amp; Boring Squad</option>
+<option>Unassigned (Open for Bids)</option>
+</select>
+<span class="material-symbols-outlined text-[20px] absolute right-3 top-3 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<button class="w-full h-12 mt-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md" type="submit">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+          Dispatch Work Order
+        </button>
+</form>
+</div>
+</div>
+<!-- Inline Logic for Filter Switching & Toast Management -->
+<script>
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      const text = document.getElementById('toast-message');
+      if (!toast || !text) return;
+      text.textContent = message;
+      toast.classList.remove('opacity-0', '-translate-y-2');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-2');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2600);
+    }
+
+    function switchFilter(type) {
+      const tabs = {
+        active: document.getElementById('tab-active'),
+        review: document.getElementById('tab-review'),
+        resolved: document.getElementById('tab-resolved')
+      };
+
+      Object.keys(tabs).forEach(k => {
+        if (!tabs[k]) return;
+        if (k === type) {
+          tabs[k].className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md font-semibold text-center transition-all bg-surface-container-lowest text-primary shadow-sm';
+        } else {
+          tabs[k].className = 'flex-1 py-2 px-2 rounded-lg font-label-md text-label-md font-semibold text-center transition-all text-on-surface-variant hover:text-primary';
+        }
+      });
+
+      const cards = document.querySelectorAll('.ticket-card');
+      cards.forEach(card => {
+        const filterAttr = card.getAttribute('data-filter');
+        if (type === 'active') {
+          // Show active and review by default, or specific
+          card.style.display = 'block';
+        } else if (filterAttr === type) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function approveQuotation(btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span> Approved';
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-secondary', 'pointer-events-none');
+      showToast('Quotation of PKR 14,500 Approved. Vendor notified.');
+    }
+
+    function declineQuotation(btn) {
+      const card = btn.closest('.ticket-card');
+      if (card) {
+        card.style.opacity = '0.5';
+        card.style.pointerEvents = 'none';
+      }
+      showToast('Quotation declined. Revision requested from vendor.');
+    }
+
+    function openNewTicketModal() {
+      const modal = document.getElementById('new-ticket-sheet');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeNewTicketModal() {
+      const modal = document.getElementById('new-ticket-sheet');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function handleNewTicket(e) {
+      e.preventDefault();
+      closeNewTicketModal();
+      showToast('New work order logged & ledger sync pending.');
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,30,54,0.06)]" data-active-classes="text-primary-container font-bold [&amp;_span.icon-indicator]:bg-secondary-container [&amp;_span.icon-indicator]:text-primary-container"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="home" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">home</span></span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="property-search" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></span><span class="font-label-sm text-label-sm mt-0.5">Search</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="saved-properties" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark</span></span><span class="font-label-sm text-label-sm mt-0.5">Saved</span></a><a class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] text-on-surface-variant transition-all" data-path="client-inquiries" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">chat_bubble</span></span><span class="font-label-sm text-label-sm mt-0.5">Inquiries</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-full min-w-[48px] transition-all text-primary-container font-bold [&amp;_span.icon-indicator]:bg-secondary-container [&amp;_span.icon-indicator]:text-primary-container" data-path="estate-management" href="#"><span class="icon-indicator flex items-center justify-center w-12 h-8 rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">domain</span></span><span class="font-label-sm text-label-sm mt-0.5">Manage</span></a></div></nav></body></html>
